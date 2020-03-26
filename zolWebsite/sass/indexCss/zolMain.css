@@ -1,0 +1,738 @@
+html .zol-main,
+body .zol-main {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  position: relative;
+}
+
+html .zol-main .zol-main-header,
+body .zol-main .zol-main-header {
+  width: 100%;
+  height: 380px;
+}
+
+html .zol-main .zol-main-header .main-top,
+body .zol-main .zol-main-header .main-top {
+  width: 100%;
+  height: 300px;
+  display: flex;
+}
+
+html .zol-main .zol-main-header .main-top .banner,
+body .zol-main .zol-main-header .main-top .banner {
+  width: 75%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+html .zol-main .zol-main-header .main-top .banner ul,
+body .zol-main .zol-main-header .main-top .banner ul {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+html .zol-main .zol-main-header .main-top .banner ul li,
+body .zol-main .zol-main-header .main-top .banner ul li {
+  width: 910.56px;
+  height: 300px;
+  float: left;
+}
+
+html .zol-main .zol-main-header .main-top .banner ul li img,
+body .zol-main .zol-main-header .main-top .banner ul li img {
+  width: 100%;
+  height: 100%;
+}
+
+html .zol-main .zol-main-header .main-top .banner .page,
+body .zol-main .zol-main-header .main-top .banner .page {
+  padding: 10px;
+  position: absolute;
+  right: 50%;
+  bottom: 10px;
+}
+
+html .zol-main .zol-main-header .main-top .banner .page span,
+body .zol-main .zol-main-header .main-top .banner .page span {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+html .zol-main .zol-main-header .main-top .banner .page .active,
+body .zol-main .zol-main-header .main-top .banner .page .active {
+  background: #c40000;
+}
+
+html .zol-main .zol-main-header .main-top .banner .btn-prev,
+body .zol-main .zol-main-header .main-top .banner .btn-prev {
+  width: 39px;
+  height: 65px;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 120px;
+  background: url(../../src/img/index_img/li_prev_btn.png);
+}
+
+html .zol-main .zol-main-header .main-top .banner .btn-next,
+body .zol-main .zol-main-header .main-top .banner .btn-next {
+  width: 39px;
+  height: 65px;
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 120px;
+  background: url(../../src/img/index_img/li_next_btn.png);
+}
+
+html .zol-main .zol-main-header .main-top .main-right,
+body .zol-main .zol-main-header .main-top .main-right {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+html .zol-main .zol-main-header .main-top .main-right .tu-top,
+body .zol-main .zol-main-header .main-top .main-right .tu-top {
+  width: 100%;
+  height: 50%;
+}
+
+html .zol-main .zol-main-header .main-top .main-right .tu-top img,
+body .zol-main .zol-main-header .main-top .main-right .tu-top img {
+  width: 100%;
+  height: 100%;
+}
+
+html .zol-main .zol-main-header .main-top .main-right .tu-btm,
+body .zol-main .zol-main-header .main-top .main-right .tu-btm {
+  width: 100%;
+  height: 50%;
+}
+
+html .zol-main .zol-main-header .main-top .main-right .tu-btm img,
+body .zol-main .zol-main-header .main-top .main-right .tu-btm img {
+  width: 100%;
+  height: 100%;
+}
+
+html .zol-main .zol-main-header .main-btm,
+body .zol-main .zol-main-header .main-btm {
+  width: 100%;
+  height: 80px;
+  background: #fafafa;
+}
+
+html .zol-main .zol-main-header .main-btm .service-list,
+body .zol-main .zol-main-header .main-btm .service-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+html .zol-main .zol-main-header .main-btm .service-list li,
+body .zol-main .zol-main-header .main-btm .service-list li {
+  height: 80px;
+  color: #f1a8a8;
+  display: flex;
+  line-height: 80px;
+  cursor: pointer;
+}
+
+html .zol-main .zol-main-header .main-btm .service-list li .iconfont,
+body .zol-main .zol-main-header .main-btm .service-list li .iconfont {
+  display: block;
+  font-size: 40px;
+}
+
+html .zol-main .zol-main-header .main-btm .service-list li .servive-class,
+body .zol-main .zol-main-header .main-btm .service-list li .servive-class {
+  display: block;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+html .zol-main .zol-main-neck,
+body .zol-main .zol-main-neck {
+  width: 100%;
+  height: 450px;
+}
+
+html .zol-main .zol-main-neck .main-heade,
+body .zol-main .zol-main-neck .main-heade {
+  width: 100%;
+  height: 65px;
+  background: #fff;
+  font-size: 24px;
+  line-height: 65px;
+  color: #333333;
+  font-weight: normal;
+}
+
+html .zol-main .main-lunbo,
+body .zol-main .main-lunbo {
+  width: 99.98%;
+  height: 365px;
+  font: 12px Arial;
+  position: relative;
+  border: 1px solid #ededed;
+}
+
+html .zol-main .main-lunbo .big_pic,
+body .zol-main .main-lunbo .big_pic {
+  width: 70px;
+  height: 24px;
+  position: absolute;
+  top: -44px;
+  right: 0px;
+  z-index: 2;
+  display: flex;
+  color: #999;
+}
+
+html .zol-main .main-lunbo .big_pic .prev,
+body .zol-main .main-lunbo .big_pic .prev {
+  display: block;
+  width: 33px;
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+  border: 1px solid #999;
+  border-right: 0;
+  cursor: pointer;
+}
+
+html .zol-main .main-lunbo .big_pic .next,
+body .zol-main .main-lunbo .big_pic .next {
+  display: block;
+  width: 33px;
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+  border: 1px solid #999;
+  cursor: pointer;
+}
+
+html .zol-main .main-lunbo .small_pic,
+body .zol-main .main-lunbo .small_pic {
+  width: 100%;
+  height: 363px;
+  position: relative;
+  overflow: hidden;
+}
+
+html .zol-main .main-lunbo .small_pic .small,
+body .zol-main .main-lunbo .small_pic .small {
+  width: 100%;
+  height: 363px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+html .zol-main .main-lunbo .small_pic .small li,
+body .zol-main .main-lunbo .small_pic .small li {
+  width: 273px;
+  height: 361px;
+  padding: 15px 15px 20px;
+  border-right: 1px dashed;
+  border-color: #ededed;
+  float: left;
+}
+
+html .zol-main .main-lunbo .small_pic .small li .pic,
+body .zol-main .main-lunbo .small_pic .small li .pic {
+  width: 201px;
+  height: 201px;
+}
+
+html .zol-main .main-lunbo .small_pic .small li .pic a,
+body .zol-main .main-lunbo .small_pic .small li .pic a {
+  display: block;
+  position: relative;
+  zoom: 1;
+  width: 268px;
+  height: 201px;
+}
+
+html .zol-main .main-lunbo .small_pic .small li .pic a img,
+body .zol-main .main-lunbo .small_pic .small li .pic a img {
+  width: 100%;
+  height: 100%;
+}
+
+html .zol-main .main-lunbo .small_pic .small li .pic a .ls-price,
+body .zol-main .main-lunbo .small_pic .small li .pic a .ls-price {
+  width: 27px;
+  height: 34px;
+  padding: 3px 5px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font: 12px/14px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+  text-align: center;
+  color: #fff;
+  background: url(../../src/img/index_img/main_li_price.png) no-repeat;
+}
+
+html .zol-main .main-lunbo .small_pic .small li .title:hover a,
+html .zol-main .main-lunbo .small_pic .small li .shop-name:hover a,
+body .zol-main .main-lunbo .small_pic .small li .title:hover a,
+body .zol-main .main-lunbo .small_pic .small li .shop-name:hover a {
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+html .zol-main .main-lunbo .small_pic .small li .title,
+body .zol-main .main-lunbo .small_pic .small li .title {
+  display: block;
+  width: 100%;
+  height: 22px;
+  padding: 10px 0 0;
+  font: 12px/14px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+}
+
+html .zol-main .main-lunbo .small_pic .small li .title a,
+body .zol-main .main-lunbo .small_pic .small li .title a {
+  color: #333;
+}
+
+html .zol-main .main-lunbo .small_pic .small li .price,
+body .zol-main .main-lunbo .small_pic .small li .price {
+  padding: 5px 0 0;
+  font: 16px/44px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+  color: #c31f1e;
+}
+
+html .zol-main .main-lunbo .small_pic .small li .price .original,
+body .zol-main .main-lunbo .small_pic .small li .price .original {
+  padding: 0 0 0 16px;
+  color: #b0b0b0;
+  text-decoration: line-through;
+}
+
+html .zol-main .main-lunbo .small_pic .small li .shop-name,
+body .zol-main .main-lunbo .small_pic .small li .shop-name {
+  padding: 3px 0 0;
+}
+
+html .zol-main .main-lunbo .small_pic .small li .shop-name a,
+body .zol-main .main-lunbo .small_pic .small li .shop-name a {
+  color: #666;
+}
+
+html .zol-main .main-lunbo .small_pic .small li .countdown,
+body .zol-main .main-lunbo .small_pic .small li .countdown {
+  padding: 5px 0 0;
+}
+
+html .zol-main .main-lunbo .small_pic .small li .countdown span,
+body .zol-main .main-lunbo .small_pic .small li .countdown span {
+  color: #999;
+}
+
+html .zol-main .main-lunbo .small_pic .small li #day,
+html .zol-main .main-lunbo .small_pic .small li #hour,
+html .zol-main .main-lunbo .small_pic .small li #minute,
+html .zol-main .main-lunbo .small_pic .small li #second,
+body .zol-main .main-lunbo .small_pic .small li #day,
+body .zol-main .main-lunbo .small_pic .small li #hour,
+body .zol-main .main-lunbo .small_pic .small li #minute,
+body .zol-main .main-lunbo .small_pic .small li #second {
+  font: 12px/18px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+  color: #c31f1e;
+}
+
+html .zol-main .main-lunbo .small_pic .small li .price-btn,
+body .zol-main .main-lunbo .small_pic .small li .price-btn {
+  display: block;
+  width: 84px;
+  height: 40px;
+  float: right;
+  background: #c31f1e;
+  text-align: center;
+  font: 16px/40px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+  margin: -43px 0 0;
+  color: #fff;
+}
+
+html #suction-tip,
+body #suction-tip {
+  width: 100%;
+  height: 74px;
+}
+
+html #suction-tip .today-tit,
+body #suction-tip .today-tit {
+  width: 100%;
+  font-family: "Microsoft yahei" !important;
+  color: #333;
+  background: khaki;
+}
+
+html #suction-tip .today-tit h3,
+body #suction-tip .today-tit h3 {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+html #suction-tip .marginT,
+body #suction-tip .marginT {
+  width: 100%;
+}
+
+html #suction-tip .marginT .sorts,
+body #suction-tip .marginT .sorts {
+  font-family: "Microsoft yahei" !important;
+  font: 12px/1.5 Arial;
+  color: #333;
+  height: 38px;
+  border: 1px solid #ededed;
+  background: #fafafa;
+}
+
+html #suction-tip .marginT .sorts a,
+body #suction-tip .marginT .sorts a {
+  display: block;
+  font-family: "Microsoft yahei" !important;
+  font: 12px/1.5 Arial;
+  color: #666;
+  height: 40px;
+  float: left;
+}
+
+html #suction-tip .marginT .sorts a li,
+body #suction-tip .marginT .sorts a li {
+  line-height: 34px;
+  padding: 0 14px;
+  border: 1px solid #fafafa;
+  border-top: none;
+  border-bottom: none;
+  cursor: pointer;
+  color: #666;
+  position: relative;
+}
+
+html #suction-tip .marginT .sorts a li .arrow-down,
+body #suction-tip .marginT .sorts a li .arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #b6b6b6;
+  position: absolute;
+  right: 0;
+  top: 16px;
+}
+
+html #suction-tip .marginT .sorts a li .arrow-up,
+body #suction-tip .marginT .sorts a li .arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid #b6b6b6;
+  position: absolute;
+  right: 0;
+  top: 16px;
+}
+
+html #suction-tip .marginT .sorts a .active,
+body #suction-tip .marginT .sorts a .active {
+  border-color: #ededed;
+  background: #fff;
+  color: #f33;
+  cursor: default;
+}
+
+html .flxe,
+body .flxe {
+  position: fixed;
+  top: -2%;
+  left: 5%;
+  z-index: 20;
+}
+
+html .commodity-list,
+body .commodity-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+html .commodity-list .commodity-item,
+body .commodity-list .commodity-item {
+  width: 384px;
+  margin: 0 20px 20px 0;
+}
+
+html .commodity-list .commodity-item .commodity-item-link,
+body .commodity-list .commodity-item .commodity-item-link {
+  display: block;
+  width: 100%;
+  height: 450px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+html .commodity-list .commodity-item .commodity-item-link .item-pic,
+body .commodity-list .commodity-item .commodity-item-link .item-pic {
+  width: 100%;
+  height: 290px;
+}
+
+html .commodity-list .commodity-item .commodity-item-link .item-pic .pic-img img,
+body .commodity-list .commodity-item .commodity-item-link .item-pic .pic-img img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html .commodity-list .commodity-item .commodity-item-link .item-info,
+body .commodity-list .commodity-item .commodity-item-link .item-info {
+  width: 355px;
+  height: 89px;
+  padding: 12px 0 10px;
+  margin: 0 15px;
+  border-bottom: 1px dashed #dedede;
+}
+
+html .commodity-list .commodity-item .commodity-item-link .item-info .item-desc,
+body .commodity-list .commodity-item .commodity-item-link .item-info .item-desc {
+  cursor: pointer;
+}
+
+html .commodity-list .commodity-item .commodity-item-link .item-info .item-desc .item-name,
+body .commodity-list .commodity-item .commodity-item-link .item-info .item-desc .item-name {
+  display: block;
+  height: 22px;
+  line-height: 22px;
+  color: #333;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 2px;
+}
+
+html .commodity-list .commodity-item .commodity-item-link .item-info .item-desc .item-intro,
+body .commodity-list .commodity-item .commodity-item-link .item-info .item-desc .item-intro {
+  display: block;
+  height: 14px;
+  line-height: 12px;
+  color: #999999;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+html .commodity-list .commodity-item .commodity-item-link .item-info .item-detail,
+body .commodity-list .commodity-item .commodity-item-link .item-info .item-detail {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+html .commodity-list .commodity-item .commodity-item-link .item-info .item-detail .item-detail-left,
+body .commodity-list .commodity-item .commodity-item-link .item-info .item-detail .item-detail-left {
+  width: 60%;
+  height: 40px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+html .commodity-list .commodity-item .commodity-item-link .item-info .item-detail .item-detail-left .item-price,
+body .commodity-list .commodity-item .commodity-item-link .item-info .item-detail .item-detail-left .item-price {
+  width: 122.97px;
+  display: flex;
+  align-items: center;
+}
+
+html .commodity-list .commodity-item .commodity-item-link .item-info .item-detail .item-detail-left .item-price .xj-price,
+body .commodity-list .commodity-item .commodity-item-link .item-info .item-detail .item-detail-left .item-price .xj-price {
+  display: block;
+  color: #c31f1e;
+  font-size: 26px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+html .commodity-list .commodity-item .commodity-item-link .item-info .item-detail .item-detail-left .item-price .yj-price,
+body .commodity-list .commodity-item .commodity-item-link .item-info .item-detail .item-detail-left .item-price .yj-price {
+  display: block;
+  color: #999999;
+  font-size: 14px;
+  font-weight: normal;
+  margin-right: 8px;
+  margin-top: 9px;
+  text-decoration: line-through;
+}
+
+html .commodity-list .commodity-item .commodity-item-link .item-info .item-detail .item-detail-left .ls-price,
+body .commodity-list .commodity-item .commodity-item-link .item-info .item-detail .item-detail-left .ls-price {
+  width: 70px;
+  height: 20px;
+  border: 1px solid #c31f1e;
+}
+
+html .commodity-list .commodity-item .commodity-item-link .item-info .item-detail .item-detail-left .ls-price span,
+body .commodity-list .commodity-item .commodity-item-link .item-info .item-detail .item-detail-left .ls-price span {
+  display: block;
+  height: 19px;
+  line-height: 19px;
+  font-size: 12px;
+  color: #c31f1e;
+  text-align: center;
+}
+
+html .commodity-list .commodity-item .commodity-item-link .item-info .item-detail .item-btn,
+body .commodity-list .commodity-item .commodity-item-link .item-info .item-detail .item-btn {
+  width: 84px;
+  height: 40px;
+  background: #c40000;
+  line-height: 40px;
+  text-align: center;
+  font-size: 17px;
+  color: #f3ffff;
+}
+
+html .commodity-list .commodity-item .commodity-item-link .show-time,
+body .commodity-list .commodity-item .commodity-item-link .show-time {
+  padding: 14px 15px 14px 35px;
+  position: relative;
+  background: url(../../src/img/index_img/showTime.png) no-repeat 15px center;
+}
+
+html .commodity-list .commodity-item .commodity-item-link .show-time .countdown,
+body .commodity-list .commodity-item .commodity-item-link .show-time .countdown {
+  height: 19px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #666;
+}
+
+html .commodity-list li:nth-child(3n),
+body .commodity-list li:nth-child(3n) {
+  margin: 0 0px 20px 0 !important;
+}
+
+html .commodity-list .commodity-item:hover .commodity-item-link,
+body .commodity-list .commodity-item:hover .commodity-item-link {
+  border: 1px solid #f33;
+}
+
+html .zol-main-bFooter,
+body .zol-main-bFooter {
+  width: 100%;
+  height: 50px;
+  background-color: #fafafa;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html .zol-main-bFooter a,
+body .zol-main-bFooter a {
+  display: block;
+  width: 160px;
+  height: 16px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+}
+
+html .zol-main-bFooter a:hover,
+body .zol-main-bFooter a:hover {
+  color: #c40000;
+  text-decoration: underline;
+}
+
+.widget {
+  width: 40px;
+  position: fixed;
+  left: 50%;
+  top: 68%;
+  margin-left: 600px;
+  z-index: 1000;
+  opacity: 0;
+}
+
+.widget #right-code {
+  width: 24px;
+  height: 31px;
+  background-color: #5e5e5d;
+  margin-bottom: 6px;
+  border-radius: 2px;
+  line-height: 11px;
+  padding: 5px 8px 0 8px;
+  position: relative;
+}
+
+.widget #right-code a {
+  color: #fff;
+  font-size: 11px;
+}
+
+.widget .code {
+  display: none;
+  width: 106px;
+  border: 1px solid #cfcfcf;
+  position: absolute;
+  left: -118px;
+  top: -30px;
+  padding: 10px 5px;
+  background: #fff;
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+}
+
+.widget .code .phone {
+  margin: 8px 0 6px;
+}
+
+.widget .code .num {
+  color: #f33;
+}
+
+.widget .up {
+  width: 40px;
+  height: 36px;
+}
+
+.widget .up a {
+  display: block;
+  height: 36px;
+  background: url(../../src/img/index_img/arrow-up.png) no-repeat 12px center #5e5e5d;
+}
+
+.widget .up:hover a {
+  background-color: #f33;
+}
+
+.widget #right-code:hover {
+  background-color: #f33;
+  text-decoration: underline;
+}
+
+.widget #right-code:hover .code {
+  display: block;
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册_Z商城</title>
+    <link rel="stylesheet" href="../../sass/zhuceCss/zhuce.css">
+    <link rel="stylesheet" href="../../font/iconfont.css">
+</head>
+
+<body>
+    <div id="zhuce" class="zhuce">
+        <!-- 注册首部 -->
+        <div class="zhuce-header">
+            <div class="header clearfix">
+                <div class="logo">
+                    <a title="Z商城" href="http://www.zol.com">
+                        <img width="130" height="60" title="Z商城" alt="Z商城"
+                            src="http://icon.zol-img.com.cn/newshop/shop/login/logo.png">
+                        <p>中关村在线旗下导购平台</p>
+                    </a>
+                </div>
+                <div class="register-bar">
+                    已经有值买账号？<a href="denglu.html">立即登录</a>
+                </div>
+            </div>
+        </div>
+        <!-- 内容块 -->
+        <div class="zhuce-content">
+            <div class="title">30秒快速注册，加入值买</div>
+            <div class="zhu-wrapper">
+                <div class="zhu-content">
+                    <!--标题栏 -->
+                    <ul class="phoneZhu-tab" id="phoneZhu">
+                        <li class="current" rel="phone">
+                            <span class="phone-number">
+                                <i class="iconfont icon-shouji"></i>用手机号注册</span>
+                        </li>
+                    </ul>
+                    <!--验证模块  -->
+                    <div class="content">
+                        <div class="register-form">
+                            <div class="label">
+                                <span class="xh">*</span>手机号：
+                            </div>
+                            <input name="phone_number" id="phone_number" type="text" class="text" maxlength="11">
+                            <i class="right-tips" style="display:none;"></i>
+                            <i class="wrong-tips" style="display:none;" id="phone_tips">请填写有效的11位手机号码</i>
+                            <div class="tips">请填写手机号码</div>
+                        </div>
+                        <div class="register-form">
+                            <div class="label">
+                                <span class="xh">*</span>验证码：
+                            </div>
+                            <input name="yanZma" id="yanZma" type="text" class="text" maxlength="11">
+                            <i class="right-tips" style="display:none;"></i>
+                            <i class="wrong-tips" style="display:none;" id="yanZma_tips">请完成验证</i>
+                            <div class="tips">请完成验证</div>
+                        </div>
+                        <div class="register-form">
+                            <div class="label">
+                                <span class="xh">*</span>验证码：
+                            </div>
+                            <input name="phone_yanZma" id="phone_yanZma" type="text" class="text" maxlength="11">
+                            <input name="yanzhengma" id="yzma" type="button" value="获取短信验证码">
+                            <i class="right-tips" style="display:none;"></i>
+                            <i class="wrong-tips" style="display:none;" id="phone_yanZma_tips">请完成验证</i>
+                            <div class="tips">请填写手机号码，然后点击[获取验证码]</div>
+                        </div>
+                        <div class="register-form">
+                            <div class="label">
+                                <span class="xh">*</span>密码：
+                            </div>
+                            <input name="yanPassword" id="yanPassword" type="password" class="text" maxlength="11">
+                            <i class="right-tips" style="display:none;"></i>
+                            <i class="wrong-tips" style="display:none;" id="yanPassword_tips">请输入正确格式</i>
+                            <div class="tips">6-16位字母和数字的组合，不可用特殊字符</div>
+                        </div>
+                        <div class="register-form">
+                            <div class="label">
+                                <span class="xh">*</span>确认密码：
+                            </div>
+                            <input name="qrPassword" id="qrPassword" type="password" class="text" maxlength="11">
+                            <i class="right-tips" style="display:none;"></i>
+                            <i class="wrong-tips" style="display:none;" id="qrPassword_tips">前后密码不一致</i>
+                            <div class="tips">确认密码</div>
+                        </div>
+                        <label class="agreement">
+                            <input type="checkbox" value="1" name="regRead_phone" id="regRead_phone" checked="">同意<a
+                                href="http://help.zol.com/index.php?c=Detail&amp;id=1019" target="_blank">《商城用户协议》</a><a
+                                href="http://help.zol.com/index.php?c=Detail&amp;id=1022" target="_blank"
+                                class="xy_a">《隐私权说明》</a>
+                        </label>
+                        <input name="phone_submit" type="button" value="注册" class="register-btn" id="phone_submit">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 脚部 -->
+        <div class="zhuce-footer">
+            <div class="fot-wrapper">
+                <div class="copyrightA">
+                    <a href="###" target="_blank">关于Z商城</a> |
+                    <a href="###" target="_blank">联系我们</a> |
+                    <a href="###" target="_blank">帮助中心</a>
+                </div>
+                <span class="copyrightSpan" style="margin-left:-5px;"> ©2019 中关村在线 版权所有</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../../src/js/common.js"></script>
+<script>
+    let phoneNumber = document.querySelector('#phone_number');
+    let yanZma = document.querySelector('#yanZma');
+    let texts = document.querySelectorAll('.text');
+    let phoneYanZma = document.querySelector('#phone_yanZma');
+    let yanPassword = document.querySelector('#yanPassword');
+    let qrPassword = document.querySelector('#qrPassword');
+    let phoneSubmit = document.querySelector('#phone_submit');
+    let rightTips = document.querySelectorAll('.right-tips');
+    let wrongTips = document.querySelectorAll('.wrong-tips');
+    let qrPasswordTips = document.querySelector('#qrPassword_tips');
+    let num;
+    // 手机号码
+    phoneNumber.onblur = function () {
+        texts[0].style.borderColor = '';
+        let strNumber = phoneNumber.value.trim();
+        if (strNumber) {
+            let isok = checkReg.tel(strNumber);
+            // console.log(isok);
+            num = 0;
+            yan(isok, num);
+            if (isok == true) {
+                ajax({
+                    type: 'get',
+                    url: '../../api/username.php',
+                    data: { //选填
+                        name: strNumber
+                    },
+                    success: function (str) {
+                        //成功的回调
+                        userRegName(str);
+                    }
+                });
+            }
+        }
+    }
+
+    phoneNumber.onfocus = function () {
+        texts[0].style.borderColor = '#fb060c';
+    }
+    //
+    function userRegName(str) {
+        // console.log(str);
+        if (str == 'yes') {
+            rightTips[0].innerHTML = '验证成功';
+            rightTips[0].style.color = '#58bc58';
+        } else if (str == 'no') {
+            rightTips[0].innerHTML = '用户已存在,请重新输入';
+            rightTips[0].style.color = 'red';
+        }
+    }
+
+    // 拖拽验证
+    yanZma.onblur = function () {
+        texts[1].style.borderColor = '';
+
+    }
+    yanZma.onfocus = function () {
+        texts[1].style.borderColor = '#fb060c';
+    }
+
+    // 短信验证
+    phoneYanZma.onblur = function () {
+        texts[2].style.borderColor = '';
+        let strDuan = phoneYanZma.value.trim();
+        if (strDuan) {
+            let isok = checkReg.duanxin(strDuan);
+            num = 2;
+            yan(isok, num);
+        }
+    }
+    phoneYanZma.onfocus = function () {
+        texts[2].style.borderColor = '#fb060c';
+    }
+
+    // 输入密码
+    yanPassword.onblur = function () {
+        texts[3].style.borderColor = '';
+        let strYanPass = yanPassword.value.trim();
+        if (strYanPass) {
+            let isok = checkReg.passwors(strYanPass);
+            num = 3;
+            yan(isok, num);
+        }
+    }
+    yanPassword.onfocus = function () {
+        texts[3].style.borderColor = '#fb060c';
+    }
+
+    // 确认密码
+    qrPassword.onblur = function () {
+        texts[4].style.borderColor = '';
+        let strYanPass = yanPassword.value.trim();
+        let strqrPass = qrPassword.value.trim();
+        // console.log(strYanPass, strqrPass);
+        if (strqrPass && strYanPass && strqrPass == strYanPass) {
+            let isok = checkReg.qrPassword(strqrPass);
+            num = 4;
+            yan(isok, num);
+            qrPasswordTips.style.display = 'none';
+        } else {
+            qrPasswordTips.style.display = 'block';
+        }
+    }
+    qrPassword.onfocus = function () {
+        texts[4].style.borderColor = '#fb060c';
+    }
+
+
+    // 注册
+    phoneSubmit.onclick = function () {
+        let strNumber = phoneNumber.value.trim();//手机号
+        let strYanPass = yanPassword.value.trim();//输入密码
+        let strqrPass = qrPassword.value.trim();//确认密码
+
+        if (strNumber && strYanPass && strqrPass && strYanPass == strqrPass) {
+            // console.log(strYanPass, strqrPass);
+            ajax({
+                type: 'post',
+                url: '../../api/usernameReg.php',
+                data: { //选填
+                    uname: strNumber,
+                    paswd: strqrPass
+                },
+                success: function (str) {
+                    //成功的回调
+                    userRegPaswd(str);
+                    // console.log(str);
+                }
+            });
+
+        } else {
+            alert('请确认密码');
+        }
+    }
+
+    function userRegPaswd(str) {
+        if (str == 'yes') {
+            alert('注册成功!');
+        } else if (str == 'no') {
+            alert('注册失败!');
+        }
+    };
+
+    // 封装
+    function yan(data, num) {
+        if (data == true) {
+            rightTips[num].style.display = 'block';
+            wrongTips[num].style.display = 'none';
+            rightTips[3].innerHTML = '验证成功';
+            rightTips[3].style.color = '#58bc58';
+        } else {
+            rightTips[num].style.display = 'none';
+            wrongTips[num].style.display = 'block';
+            wrongTips[num].innerHTML = '输入错误,请重新输入';
+            wrongTips[num].style.color = 'red';
+        }
+    }
+</script>
+
+</html>

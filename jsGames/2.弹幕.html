@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        /* body {
+            background: #e5858e;
+
+        } */
+
+        .box {
+            overflow: hidden;
+            /* border-radius: 20px; */
+            background: #999;
+            text-align: center;
+            margin: 50px auto;
+            height: 400px;
+            width: 800px;
+            border: 1px solid black;
+            /* padding: 10px; */
+        }
+
+        .main {
+
+            margin-bottom: 15px;
+            height: 350px;
+            width: 800px;
+            background: black
+        }
+
+        #put1 {
+            background: white;
+            /* border-radius: 5px; */
+            height: 20px;
+            width: 350px;
+        }
+
+        #put2 {
+            background: #ececec;
+            /* border-radius: 5px; */
+            height: 26px;
+            width: 60px;
+        }
+
+        ul {
+            /* right: -10px; */
+            left: 750px;
+            top: 0px;
+            position: absolute;
+        }
+
+        ul li {
+            overflow: hidden;
+            /* border: 1px solid black; */
+            width: 100px;
+            top: 0px;
+            position: absolute;
+            /* right: -10px; */
+
+            list-style: none;
+        }
+
+        .box {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="main"></div>
+        <ul>
+            <!-- <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li> -->
+        </ul>
+        <input type="text" id="put1">
+        <input type="button" value="send" id="put2">
+    </div>
+    <script>window.onload = () => {
+            // 1，把样式写好，获取input的值，渲染生成在右边
+            // 2，当点击时事件执行改变li标签的样式，创建li标签 color, left, move,
+            //     随机数用Math.random(), 移动距离设为box宽度
+
+            // 获取页面中的标签
+            let input = document.querySelector("#put1");
+            let send = document.querySelector("#put2");
+            let ul = document.querySelector("ul");
+            // 封装
+            handle = () => {
+                let inputText = input.value;
+                let tex = inputText;
+                input.value = ""
+                // console.log(tex);
+                // 创建子节点
+                let li = document.createElement("li")
+                // console.log(li);
+                // 输入框的内容放到节点里渲染
+                li.innerText = tex;
+                // 渲染内容
+                ul.appendChild(li);
+                // color,move,top随机
+                let r = parseInt(Math.random() * 256);
+                let g = parseInt(Math.random() * 256);
+                let b = parseInt(Math.random() * 256);
+
+                let top = parseInt(Math.random() * 301);
+                let move = parseInt(Math.random() * -10) + -1;
+                let color = 'rgb' + '(' + r + ',' + g + ',' + b + ')';
+                // 添加事件执行改变样式
+                let moveing = 0;
+                let timer = setInterval(function () {
+                    // moveing += -15;//计算速度
+                    moveing += move
+                    li.style.left = moveing + "px";
+                    li.style.color = color;
+                    li.style.top = top + "px"
+                    //设定界限
+                    if (moveing < -810) {
+                        //删除节点
+                        ul.removeChild(li)
+                        clearInterval(timer)
+                    }
+                }, 30);
+
+            }
+            // 添加点击事件
+            send.onclick = () => {
+                handle()
+
+            }//bug,1零界点判断。2，输入框失去焦点事件
+
+            //Enter按键事件
+            document.onkeydown = function (event) {
+                let e = event || window.event;
+                if (e && e.keyCode == 13) {
+                    // console.log("q");
+                    handle()
+                }
+            }
+        } 
+    </script>
+</body>
+
+</html>

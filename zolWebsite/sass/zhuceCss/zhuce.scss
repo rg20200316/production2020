@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    width: 100%;
+    margin-top: 50px;
+
+    #zhuce {
+        width: 100%;
+
+        .zhuce-header {
+            width: 72.68%;
+            height: 94px;
+            margin: auto;
+
+            .header {
+                // height: 100%;
+                height: 54px;
+                padding: 20px 0;
+
+                .logo {
+
+                    img {
+                        float: left;
+                    }
+
+                    p {
+                        float: left;
+                        text-align: center;
+                        padding: 0;
+                        margin: 8px 0 0 8px;
+                        padding-left: 10px;
+                        font: 14px/44px simsun;
+                        color: #666;
+                        border-left: 1px solid #e6e6e6;
+                        cursor: pointer;
+                    }
+                }
+
+                .register-bar {
+                    font: 12px/1.5 Arial;
+                    color: #333;
+                    text-align: center;
+                    float: right;
+                    padding: 21px 0 0;
+                    font-size: 14px;
+                    line-height: 22px;
+
+                    a {
+                        text-align: center;
+                        text-decoration: none;
+                        float: right;
+                        height: 16px;
+                        padding: 3px 10px;
+                        color: #c00;
+                        font: normal 14px/14px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+                    }
+
+                    a:hover {
+                        background: #dc2e2e;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .zhuce-content {
+            width: 72.48%;
+            height: 766px;
+            border: 1px solid #ccc;
+            margin: auto;
+
+            .title {
+                width: 100%;
+                height: 60px;
+                text-align: center;
+                line-height: 60px;
+                font-size: 18px;
+                color: #9999a6;
+                background: #fafafa;
+            }
+
+            .zhu-wrapper {
+                width: 100%;
+                height: 706px;
+                overflow: hidden;
+
+                .zhu-content {
+                    width: 500px;
+                    height: 676px;
+                    float: left;
+                    margin-left: 88px;
+                    margin-top: 30px;
+
+                    #phoneZhu {
+                        width: 100%;
+                        height: 40px;
+                        border-bottom: 1px solid #e6e6e6;
+                        list-style: none;
+
+                        .current {
+                            width: 50%;
+                            height: 38px;
+                            padding-top: 1px;
+                            border-top: 2px solid #e02d2d;
+                            border-left: 1px solid #e6e6e6;
+                            border-right: 1px solid #e6e6e6;
+                            background: #fff;
+                            color: #cc0000;
+                            line-height: 38px;
+                            text-align: center;
+
+                            i {
+                                color: #ff3333;
+                            }
+                        }
+
+                    }
+
+                    .content {
+                        margin-top: 30px;
+
+                        .register-form {
+                            position: relative;
+                            margin: 0 0 42px;
+                            padding: 0 0 0 83px;
+                            zoom: 1;
+
+                            .label {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 83px;
+                                font: 14px/40px "Arial";
+                                text-align: right;
+                                color: #666;
+
+                                .xh {
+                                    color: #ff335d;
+                                }
+                            }
+
+                            i {
+                                display: block;
+                                color: #c00;
+                                font: 10px/40px "Arial";
+                                position: absolute;
+                                top: 0;
+                                left: 370px;
+                            }
+
+                            .text {
+                                display: block;
+                                margin: 0 10px 0 0;
+                                padding: 8px 5px;
+                                width: 248px;
+                                height: 22px;
+                                border: 1px solid;
+                                outline: none; //去掉选中时的默认边框颜色
+                                border-color: #ccc; //添加颜色 同时也去默认的边框颜色
+                            }
+
+                            #phone_yanZma {
+                                display: block;
+                                margin: 0 10px 0 0;
+                                padding: 8px 5px;
+                                width: 128px;
+                                height: 22px;
+                                border: 1px solid;
+                                border-color: #ccc;
+                            }
+
+                            #yzma {
+                                display: block;
+                                margin: 0 10px 0 0;
+                                padding: 8px 5px;
+                                width: 110px;
+                                height: 40px;
+                                border: 1px solid;
+                                border-color: #ccc;
+                                outline: none;
+                                position: absolute;
+                                top: 0;
+                                left: 250px;
+                                cursor: pointer;
+                            }
+
+                            .tips {
+                                position: absolute;
+                                top: 47px;
+                                left: 83px;
+                                color: #aaa;
+                                font-size: 10px;
+                            }
+                        }
+
+                        .agreement {
+                            display: block;
+                            padding: 0 0 0 83px;
+                            height: 32px;
+                            font: 12px/32px "Arial";
+                            color: #999;
+                        }
+
+                        .register-btn {
+                            display: block;
+                            margin: 20px 0 0 83px;
+                            width: 290px;
+                            height: 40px;
+                            font: bold 14px/40px "Arial";
+                            color: #fff;
+                            text-align: center;
+                            border: 0 none;
+                            background-position: 0 0;
+                            cursor: pointer;
+                            outline: none;
+                            // background: url(https://login.zol.com/image/bg.png) no-repeat;
+                            background: #dc2e2e;
+                        }
+
+                        .register-btn:hover {
+                            background: #cc0000;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .zhuce-footer {
+            width: 100%;
+            height: 50px;
+            margin-top: 50px;
+            border-top: 1px solid #dcdcdc;
+            padding: 12px 0 25px;
+
+            .fot-wrapper {
+                width: 72.48%;
+                margin: auto;
+
+                .copyrightA {
+                    width: 40%;
+                    margin: 0 0 0 -10px;
+                    font: 12px/24px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+                    float: left;
+                    color: #9999a6;
+
+                    a {
+                        margin: 0 10px;
+                        color: #666;
+                        text-decoration: none;
+                        white-space: normal;
+                        word-break: keep-all;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                        color: #c00;
+                    }
+                }
+
+                .copyrightSpan {
+                    float: right;
+                    color: #666;
+                    font: 12px/24px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+html,
+body {
+    .zol-header {
+        width: 90%;
+        height: 153px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .wrapper {
+            width: 100%;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+
+            .zol-head {
+
+                a {
+                    // logo
+                    display: block;
+                    width: 200px;
+                    height: 50px;
+                    background: url(../../src/img/index_img/zol_logo.png);
+                }
+            }
+
+
+            .header-main {
+                //副题块
+                width: 540px;
+                height: 100%;
+
+                .header-sousuo {
+                    //搜索
+                    width: 536px;
+                    height: 32px;
+                    margin-top: 7px;
+                    display: flex;
+                    border: 2px solid #ec3639;
+
+                    .zol-text {
+                        padding: 6px 10px;
+                        width: 441px;
+                        height: 20px;
+                        color: #666;
+                        border: 0 none;
+                        outline: 0 none;
+                    }
+
+                    .sousuo-btn {
+                        width: 76px;
+                        height: 32px;
+                        border: 0;
+                        outline: 0 none;
+                        color: #fff;
+                        font-size: 16px;
+                        background: #ec3639;
+                        cursor: pointer;
+                    }
+                }
+
+                .header-xinxi {
+                    width: 90%;
+                    height: 48px;
+
+                    .sou-list {
+                        //公告
+                        width: 100%;
+                        height: 30px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        li {
+                            a {
+                                display: block;
+                                color: #99a6bf;
+                                font-size: 11px;
+                            }
+                        }
+                    }
+
+                    li:hover a {
+                        color: red;
+                        text-decoration: underline;
+
+                    }
+
+                    .sou-gao {
+                        width: 100%;
+                        height: 18px;
+                        display: flex;
+                        align-items: center;
+
+                        li {
+                            height: 18px;
+                            font-size: 11px;
+                            text-align: center;
+                            line-height: 18px;
+                        }
+
+                        li:nth-child(1) {
+                            width: 34px;
+                            background: #ec3639;
+                            color: #fff;
+                            margin-right: 8px;
+                        }
+
+                        li:nth-child(2) {
+                            width: 290px;
+                            color: #333333;
+                        }
+                    }
+                }
+            }
+
+            .header-menu {
+                //右菜单
+                width: 238px;
+                height: 43px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                a {
+                    display: block;
+                    font-size: 12px;
+                    position: relative;
+
+                    i {
+                        font-size: 20px;
+                    }
+
+                    .number {
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 50%;
+                        background: #ec3639;
+                        text-align: center;
+                        line-height: 13px;
+                        position: absolute;
+                        top: -8px;
+                        left: 12px;
+                        z-index: 3;
+                        color: #fff;
+                    }
+                }
+
+                a:hover {
+                    color: red;
+                    text-align: und;
+                }
+            }
+        }
+    }
+}

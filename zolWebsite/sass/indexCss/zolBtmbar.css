@@ -1,0 +1,90 @@
+html .zol-btmbar,
+body .zol-btmbar {
+  width: 100%;
+  height: 240px;
+  border-top: 1px solid #ec7373;
+}
+
+html .zol-btmbar .btn-wrapper,
+body .zol-btmbar .btn-wrapper {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+html .zol-btmbar .btn-wrapper .btn-wleft,
+body .zol-btmbar .btn-wrapper .btn-wleft {
+  padding-top: 29px;
+}
+
+html .zol-btmbar .btn-wrapper .btn-wleft dl,
+body .zol-btmbar .btn-wrapper .btn-wleft dl {
+  float: left;
+  width: 175px;
+  font-size: 14px;
+}
+
+html .zol-btmbar .btn-wrapper .btn-wleft dl dt,
+body .zol-btmbar .btn-wrapper .btn-wleft dl dt {
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+html .zol-btmbar .btn-wrapper .btn-wleft dl dd,
+body .zol-btmbar .btn-wrapper .btn-wleft dl dd {
+  margin-bottom: 10px;
+  font: 12px/1.5 Arial;
+  color: #666;
+}
+
+html .zol-btmbar .btn-wrapper .btn-wleft dl dd a,
+body .zol-btmbar .btn-wrapper .btn-wleft dl dd a {
+  color: #666;
+}
+
+html .zol-btmbar .btn-wrapper .btn-wleft dl dd .weiBo,
+body .zol-btmbar .btn-wrapper .btn-wleft dl dd .weiBo {
+  display: block;
+  height: 17px;
+  padding-left: 26px;
+  color: #666;
+  font: 12px/1.5 Arial;
+  background: url(../../src/img/index_img/weibo.png) no-repeat;
+}
+
+html .zol-btmbar .btn-wrapper .btn-wleft dl dd:hover a,
+body .zol-btmbar .btn-wrapper .btn-wleft dl dd:hover a {
+  color: #db2424;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+html .zol-btmbar .btn-wrapper .btn-wright,
+body .zol-btmbar .btn-wrapper .btn-wright {
+  width: 130px;
+  float: left;
+  margin-left: 12px;
+  font: 12px/1.5 Arial;
+  color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+html .zol-btmbar .btn-wrapper .btn-wright .erwm-img,
+body .zol-btmbar .btn-wrapper .btn-wright .erwm-img {
+  margin: -6px 0 10px;
+}
+
+html .zol-btmbar .btn-wrapper .btn-wright .guanzhu,
+body .zol-btmbar .btn-wrapper .btn-wright .guanzhu {
+  width: 130px;
+}
+
+html .zol-btmbar .btn-wrapper .btn-wright .dingdan,
+body .zol-btmbar .btn-wrapper .btn-wright .dingdan {
+  width: 130px;
+}

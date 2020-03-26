@@ -1,0 +1,80 @@
+html,
+body {
+    .zol-btmbar {
+        width: 100%;
+        height: 240px;
+        border-top: 1px solid #ec7373;
+
+        .btn-wrapper {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+
+            .btn-wleft {
+                padding-top: 29px;
+
+                dl {
+                    float: left;
+                    width: 175px;
+                    font-size: 14px;
+
+                    dt {
+                        font-weight: bold;
+                        margin-bottom: 12px;
+                        color: #333;
+                    }
+
+                    dd {
+                        margin-bottom: 10px;
+                        font: 12px/1.5 Arial;
+                        color: #666;
+
+                        a {
+                            color: #666;
+                        }
+
+                        .weiBo {
+                            display: block;
+                            height: 17px;
+                            padding-left: 26px;
+                            color: #666;
+                            font: 12px/1.5 Arial;
+                            background: url(../../src/img/index_img/weibo.png) no-repeat;
+                        }
+                    }
+
+                    dd:hover a {
+                        color: #db2424;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .btn-wright {
+                width: 130px;
+                float: left;
+                margin-left: 12px;
+                font: 12px/1.5 Arial;
+                color: #333;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                .erwm-img {
+                    margin: -6px 0 10px;
+                }
+
+                .guanzhu {
+                    width: 130px;
+                }
+
+                .dingdan {
+                    width: 130px;
+                }
+            }
+        }
+    }
+}

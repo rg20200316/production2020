@@ -1,0 +1,601 @@
+* {
+    padding: 0;
+    margin: 0;
+    font: 12px/1.5 Arial;
+    color: #333;
+}
+
+a {
+    color: #134ba0;
+}
+
+.wrapper {
+    width: 960px !important;
+    margin: auto;
+}
+
+.header {
+    height: 60px;
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 960px;
+    font: 12px/1.5 Arial;
+    color: #333;
+
+    .logo {
+        float: left;
+    }
+
+    .flow-step {
+        padding: 2px 0 0;
+        float: right;
+
+
+        li {
+            float: left;
+            width: 90px;
+            padding: 0 14px 0 0;
+            background-position: 100% -74px;
+            background-color: #e6e6e6;
+            font: 14px/36px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+            text-align: center;
+        }
+
+        .s1 {
+            color: #fff;
+            padding: 0 14px;
+            background: url(http://icon.zol-img.com.cn/newshop/order/step-bg.png) no-repeat;
+            background-position: 100% -37px;
+            background-color: #e02d2d;
+        }
+
+        .s2,
+        .s3,
+        .s4 {
+            background: url(http://icon.zol-img.com.cn/newshop/order/step-bg.png) no-repeat;
+            background-position: 100% -74px;
+            background-color: #e6e6e6;
+        }
+    }
+}
+
+//gouwuche
+.gou-wrapper {
+    width: 960px;
+    margin: 0 auto;
+
+    .mt {
+        margin-top: 10px;
+    }
+
+    //顶部总价
+    .cart-state {
+        width: 100%;
+        height: 57px;
+        text-align: right;
+
+        em {
+            font-weight: normal;
+        }
+
+        p {
+            padding: 7px 0 7px 0;
+
+            em {
+                padding: 0 0 0 10px;
+                color: #666;
+            }
+        }
+
+        .total {
+            height: 22px;
+            line-height: 22px;
+            color: #666;
+
+            span {
+                float: right;
+                padding: 0 8px 0 0;
+                line-height: 24px;
+                color: #999;
+
+                em {
+                    padding: 0 2px 0 0;
+                    color: #ff0000;
+                    font-weight: bold;
+                    font-family: verdana;
+                }
+            }
+
+            input {
+                float: right;
+                width: 58px;
+                height: 22px;
+                border: 0 none;
+                color: #fff;
+                line-height: 22px;
+                text-align: center;
+                font-weight: bold;
+                cursor: pointer;
+                outline: none;
+                background: url(http://icon.zol-img.com.cn/newshop/merchant/telecom/pic1.png) no-repeat;
+                background-position: -192px -150px;
+            }
+        }
+    }
+
+    .mt20 {
+        margin-top: 20px;
+    }
+
+    // 店铺
+    .order-table {
+        height: auto;
+
+        .order-header {
+            width: 100%;
+            height: auto;
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                border-spacing: 0;
+                table-layout: fixed;
+                position: relative;
+
+                tbody {
+                    width: 100%;
+
+                    tr {
+                        display: table-row;
+                        vertical-align: inherit;
+                        border-color: inherit;
+
+                        th {
+                            height: 36px;
+                            background: #f5f5f5;
+                            border-top: 2px solid #e02d2d;
+                            line-height: 36px;
+                            font-weight: normal;
+                            text-align: center;
+                        }
+
+                        td {
+                            padding: 10px;
+                            border-top: 1px solid #e3e3e3;
+                            border-bottom: 1px solid #e3e3e3;
+                            text-align: center;
+                        }
+                    }
+
+                    //标题
+                    .order-th-head {
+                        .th-1 {
+                            width: 62px;
+                        }
+
+                        .th-2 {
+                            width: 217px;
+                            padding: 0 0 0 100px;
+                            text-align: left;
+                        }
+
+                        .th-3 {
+                            width: 122px;
+                        }
+
+                        .th-4 {
+                            width: 106px;
+                        }
+
+                        .th-5 {
+                            width: 121px;
+                        }
+
+                        .th-6 {
+                            width: 107px;
+                        }
+
+                        .th-7 {
+                            width: 81px;
+                        }
+
+                    }
+
+                    // 参数
+                    .store-infor {
+
+                        height: 43px;
+                        padding: 10px 0 0 0;
+                        border: 0 none;
+                        background: #fff;
+
+                        .shopname {
+                            float: left;
+                            line-height: 43px;
+
+                            input {
+                                margin: -2px 5px 0 0;
+                                *margin: 0 3px 0 0;
+                                margin: 0 5px 0 0\0;
+                                position: relative;
+                                *top: -3px;
+                                top: -4px\0;
+                            }
+                        }
+
+                        .contact {
+                            float: left;
+                            padding: 11px 0 0 15px;
+
+                            .tag-security {
+                                float: left;
+                                margin: 0 10px 0 -10px;
+                                padding: 0 0 0 20px;
+                                line-height: 22px;
+                                background: url(http://icon.zol-img.com.cn/newshop/merchant/tag-security.png) no-repeat 0 50%;
+                                color: #666;
+                            }
+                        }
+                    }
+
+                    // 购物车主体
+                    .goods-order-car {
+                        background: #fff;
+
+                        .s-infor {
+                            padding: 10px 10px 10px 12px;
+                            width: 357px;
+                            border-left: 1px solid #e3e3e3;
+
+                            input {
+                                float: left;
+                                margin: 24px 10px 0 0;
+                                vertical-align: middle;
+                                font-size: 100%;
+                            }
+
+                            .pic {
+                                float: left;
+                                width: 80px;
+                                height: 80px;
+                                border: 1px solid #ccc;
+                                line-height: 58px;
+                                text-align: center;
+                                background: #fff;
+                            }
+
+                            .inforbox {
+                                float: left;
+                                width: 240px;
+                                padding: 0 0 0 10px;
+                                line-height: 20px;
+                                text-align: left;
+
+
+                                .tit {
+                                    margin: -2px 0 4px;
+                                    height: 40px;
+                                    line-height: 20px;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    overflow: hidden;
+                                }
+
+                                .security {
+                                    height: 16px;
+                                    padding: 5px 0;
+
+                                    .security-a,
+                                    .security-b,
+                                    .security-c,
+                                    .security-d,
+                                    .security-e {
+                                        float: left;
+                                        width: 16px;
+                                        height: 16px;
+                                        display: block;
+                                        margin-right: 5px;
+                                        background: url(http://icon.zol-img.com.cn/newshop/merchant/telecom/pic1.png) no-repeat;
+                                    }
+
+                                    .security-a {
+                                        background-position: 0 -286px;
+                                    }
+                                }
+
+                                p {
+                                    color: #666;
+                                    padding: 1px 0;
+                                }
+
+                                .info-con {
+                                    height: 20px;
+                                    line-height: 20px;
+                                    color: #666;
+                                    position: relative;
+
+                                    span {
+                                        cursor: pointer;
+                                    }
+
+                                    .info-help {
+                                        display: none;
+                                        width: 337px;
+                                        height: 50px;
+                                        position: absolute;
+                                        left: 36px;
+                                        top: 20px;
+                                        padding: 10px;
+                                        border: 1px solid #ccc;
+                                        background: #fff;
+                                        color: #333;
+                                        z-index: 5;
+                                    }
+                                }
+
+                                .info-con:hover .info-help {
+                                    display: block;
+                                }
+
+                            }
+
+
+                        }
+
+                        .s-price {
+                            width: 102px;
+                        }
+
+                        .s-amount {
+                            width: 130px;
+
+                            .buy-num {
+                                position: relative;
+                                width: 110px;
+                                height: 20px;
+                                padding: 31px 0;
+                                text-align: center;
+
+                                .minus,
+                                .plus {
+                                    float: left;
+                                    width: 10px;
+                                    height: 10px;
+                                    line-height: 10px;
+                                    background: #fff;
+                                    color: #333;
+                                    text-align: center;
+                                    border: 1px solid #ccc;
+                                    overflow: hidden;
+                                }
+
+                                .minus {
+                                    margin: 5px 8px 0 10px;
+                                }
+
+                                .text-amount {
+                                    width: 28px;
+                                    height: 16px;
+                                    height: auto\9;
+                                    float: left;
+                                    padding: 1px 3px;
+                                    text-align: right;
+                                }
+
+                                .plus {
+                                    margin: 5px 0 0 8px;
+                                }
+                            }
+                        }
+
+                        .s-agio {
+                            width: 101px;
+                        }
+
+                        .s-total {
+                            width: 87px;
+                            // color: #ff0000;
+                            em {
+                                color: #ff0000;
+                                font-family: "verdana";
+                            }
+                        }
+
+                        .s-del {
+                            width: 61px;
+                            border-right: 1px solid #e3e3e3;
+
+                            .s-delbox {
+                                position: relative;
+
+                                a {
+                                    display: block;
+                                    line-height: 20px;
+                                }
+
+                                .deletebox {
+                                    width: 144px;
+                                    padding: 6px 10px;
+                                    position: absolute;
+                                    top: -60px;
+                                    left: -50px;
+                                    border: 1px solid #ccc;
+                                    background-color: #fff;
+                                    line-height: 18px;
+                                    color: #666;
+
+                                    a {
+                                        margin: 0 12px;
+                                        display: inline-block;
+                                        color: #3366cc;
+                                        cursor: pointer;
+                                    }
+
+                                    i {
+                                        display: block;
+                                        width: 13px;
+                                        height: 7px;
+                                        margin-left: -5px;
+                                        position: absolute;
+                                        bottom: -7px;
+                                        left: 50%;
+                                        background: url(http://icon.zol-img.com.cn/newshop/merchant/telecom/pic1.png) no-repeat;
+                                        background-position: -248px -229px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //总价
+        .total-price {
+            padding: 0 10px 0 0;
+            height: 52px;
+            line-height: 52px;
+            text-align: right;
+
+            span {
+                color: #666;
+            }
+
+            em {
+                color: #ff0000;
+                font-size: 16px;
+                font-weight: bold;
+                font-family: verdana;
+            }
+        }
+
+        //结算
+        .order-foot {
+            position: relative;
+            padding: 0 0 0 12px;
+            height: 33px;
+            border: 1px solid #e3e3e3;
+            background: #f5f5f5;
+
+
+            .order-foot label {
+                float: left;
+                padding: 0 25px 0 0;
+            }
+
+            a {
+                float: left;
+                margin: 0 30px 0 0;
+                color: #134ba0;
+                line-height: 33px;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                color: red;
+            }
+
+            input {
+                margin: 0 5px 0 0;
+            }
+
+            .go-shopping {
+                float: none;
+                position: absolute;
+                top: 0;
+                right: 150px;
+                margin: 0;
+                font-family: "simsun";
+            }
+
+            .accounting-btn {
+                position: absolute;
+                top: -1px;
+                right: -1px;
+                width: 130px;
+                height: 35px;
+                font: 18px/35px "Microsoft YaHei";
+                color: #fff;
+                border: 0 none;
+                cursor: pointer;
+                background: url(http://icon.zol-img.com.cn/newshop/merchant/telecom/pic1.png) no-repeat;
+                background-position: 0 -113px;
+            }
+
+
+        }
+    }
+
+
+}
+
+.like-wrapper {
+    width: 960px;
+    margin: auto;
+    position: relative;
+
+    .mt20 {
+        margin-top: 20px;
+        height: 69px;
+        border-left: 1px solid #e0e0e0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .modgoods-tab {
+        // border-bottom: 1px solid #e3e3e3;
+
+        li {
+            float: left;
+            width: 128px;
+            height: 34.8px;
+            margin: 0 5px 0 0;
+            border-right: 1px solid #e0e0e0;
+            background: #f6f6f6;
+            text-align: center;
+            font: 16px/33px "Microsoft YaHei";
+            cursor: pointer;
+        }
+
+        .cur {
+            margin: 0 5px -1px 0;
+            border-top: 2px solid #e02d2d;
+            background: #fff;
+            cursor: auto;
+        }
+    }
+
+    .modgoods-tabbox {
+        width: 830px;
+        height: 33px;
+        border-top: 1px solid #e0e0e0;
+        border-right: 1px solid #e0e0e0;
+        position: absolute;
+        top: 37px;
+        left: 129px;
+    }
+}
+
+// 底部
+.footer {
+    margin: 40px auto 0;
+    padding: 5px 0 20px;
+    width: 960px;
+    text-align: center;
+    border-top: 1px solid #e3e3e3;
+
+    a:hover {
+        text-decoration: underline;
+        color: red;
+    }
+
+    .links {
+        padding: 14px 0 6px;
+        color: #ccc;
+
+        a {
+            margin: 0 10px;
+        }
+    }
+
+
+}

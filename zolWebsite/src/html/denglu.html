@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录-Z商城</title>
+    <link rel="stylesheet" href="../../sass/dengluCss/denglu.css">
+    <link rel="stylesheet" href="../../font/iconfont.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- 登录首部 -->
+        <div class="denglu-header">
+            <div class="header clearfix">
+                <div class="logo">
+                    <a title="Z商城" href="http://www.zol.com">
+                        <img width="130" height="60" title="Z商城" alt="Z商城"
+                            src="http://icon.zol-img.com.cn/newshop/shop/login/logo.png">
+                        <p>中关村在线旗下导购平台</p>
+                    </a>
+                </div>
+                <div class="register-bar">
+                    还没有值买账号？<a href="zhuce.html">立即注册</a>
+                </div>
+            </div>
+        </div>
+        <!-- 登录 -->
+        <div class="denglu-content">
+            <div class="denglu-wrapper">
+                <div class="denglu-left">
+                    <a href="http://www.zol.com/">
+                        <img src="../../src/img/denglu_img/ad2_1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="denglu-right">
+                    <div class="denglu-main">
+                        <div class="denglu-top finm">
+                            <h3>登录值买</h3>
+                            <h3>商家登录</h3>
+                        </div>
+                        <!-- 登录值买 -->
+                        <div id="user-denglu" class="user-denglu">
+                            <div class="denglu-inp">
+                                <input type="text" placeholder="手机号/邮箱/用户名" id="username" class="username">
+                                <input type="password" placeholder="密码" id="userpassword" class="userpassword">
+                                <div class="dong">
+                                    <a class="shoujia" href="###"><i class="iconfont icon-shouji"></i> 手机动态登录</a>
+                                    <a href="###">忘记密码？</a>
+                                </div>
+                                <input type="button" value="登录" id="denglu-userBtn" class="denglu-btn">
+                            </div>
+                            <div class="denglu-btm">
+                                <div class="btm-top">
+                                    <span class="spleft"></span>
+                                    <span class="spmain">合作账号登录</span>
+                                    <span class="spright"></span>
+                                </div>
+                                <div class="btm-bott clearfix">
+                                    <a href="###"><i class="iconfont icon-weixin"></i></a>
+                                    <a href="###"><i class="iconfont icon-Weibo"></i></a>
+                                    <a href="###"><i class="iconfont icon-qq"></i></a>
+                                    <a href="###"><i class="iconfont icon-zhifubao"></i></a>
+                                    <a href="###"><i class="iconfont icon-baidu"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 商家登录 -->
+                        <div id="shop-denglu" class="shop-denglu">
+                            <div class="denglu-inp">
+                                <input type="text" placeholder="用户名" id="shopname" class="shopname">
+                                <input type="password" placeholder="密码" id="shoppassword" class="shoppassword">
+                                <div class="dong">
+                                    <a href="###">忘记密码？</a>
+                                </div>
+                                <input type="button" value="登录" id="denglu-shopBtn" class="denglu-btn">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 脚部 -->
+    <div class="denglu-footer">
+        <div class="fot-wrapper">
+            <div class="copyrightA">
+                <a href="###" target="_blank">关于Z商城</a> |
+                <a href="###" target="_blank">联系我们</a> |
+                <a href="###" target="_blank">帮助中心</a>
+            </div>
+            <span class="copyrightSpan" style="margin-left:-5px;"> ©2019 中关村在线 版权所有</span>
+        </div>
+    </div>
+</body>
+<script src="../js/common.js"></script>
+<script>
+    (() => {
+        let userName = document.querySelectorAll('.denglu-top h3')[0];
+        let shopName = document.querySelectorAll('.denglu-top h3')[1];
+        let userDenglu = document.querySelector('#user-denglu');
+        let shopDenglu = document.querySelector('#shop-denglu');
+        // console.log(userName.innerHTML, shopName.innerHTML);
+        userName.onclick = function () {
+            userName.style.borderBottomColor = '#de3030';
+            shopName.style.borderBottomColor = '#e6e6e6';
+            userDenglu.style.display = 'block';
+            shopDenglu.style.display = 'none';
+        }
+        shopName.onclick = function () {
+            userName.style.borderBottomColor = '#e6e6e6';
+            shopName.style.borderBottomColor = '#de3030';
+            shopDenglu.style.display = 'block';
+            userDenglu.style.display = 'none';
+        }
+    })();
+</script>
+<script>
+    (function () {
+        let username = document.querySelector('#username');
+        let userpaw = document.querySelector('#userpassword');
+        let dengluUserBtn = document.querySelector('#denglu-userBtn');
+
+        dengluUserBtn.onclick = function () {
+            let userNa = username.value.trim();
+            let strYanPass = userpaw.value.trim();
+
+            if (userNa && strYanPass) {
+                // console.log(userNa);
+                ajax({
+                    type: 'post',
+                    url: '../../api/login.php',
+                    data: { //选填
+                        username: userNa,
+                        userpaw: strYanPass
+                    },
+                    success: function (str) {
+                        //成功的回调
+                        userRegUname(str);
+                        // console.log(str);
+                    }
+                });
+            }
+        }
+        //设置cookie
+        function setcookie(key, val, iday) {
+            let now = new Date();
+            now.setDate(now.getDate() + iday);
+            document.cookie = key + '=' + val + ';expires=' + now + ';path=/';
+        }
+
+        function userRegUname(str) {
+            if (str == 'yes') {
+                setcookie('username', username.value.trim(), 7);
+                // setcookie('userpaw', userpaw.value.trim(), 7);
+                open('../../01index.html')
+            } else if (str == 'no') {
+                alert('请输入正确身份信息!');
+            }
+        }
+    })();
+</script>
+
+</html>

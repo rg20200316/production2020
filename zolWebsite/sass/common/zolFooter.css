@@ -1,0 +1,83 @@
+html .zol-footer,
+body .zol-footer {
+  width: 100%;
+  height: 137px;
+  background: #2d2d2d;
+  padding: 25px 0 30px;
+}
+
+html .zol-footer .fot-wrapper,
+body .zol-footer .fot-wrapper {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+html .zol-footer .fot-wrapper .label,
+body .zol-footer .fot-wrapper .label {
+  color: #2d2d2d;
+}
+
+html .zol-footer .fot-wrapper .footer-nav,
+body .zol-footer .fot-wrapper .footer-nav {
+  margin: 0 0 0 -10px;
+  padding: 7px 0 0;
+}
+
+html .zol-footer .fot-wrapper .footer-nav a,
+body .zol-footer .fot-wrapper .footer-nav a {
+  white-space: normal;
+  word-break: keep-all;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 12px;
+}
+
+html .zol-footer .fot-wrapper .copyright,
+body .zol-footer .fot-wrapper .copyright {
+  margin: 0 0 0 -10px;
+  padding: 20px 0 0;
+  font: 12px/24px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+}
+
+html .zol-footer .fot-wrapper .copyright a,
+body .zol-footer .fot-wrapper .copyright a {
+  margin: 0 10px;
+  color: #999;
+  white-space: normal;
+  word-break: keep-all;
+}
+
+html .zol-footer .fot-wrapper .copyright span,
+body .zol-footer .fot-wrapper .copyright span {
+  padding: 0 0 0 15px;
+}
+
+html .zol-footer .fot-wrapper .copyright span a,
+body .zol-footer .fot-wrapper .copyright span a {
+  margin: 0 10px;
+  color: #999;
+  white-space: normal;
+  word-break: keep-all;
+}
+
+html .zol-footer .fot-wrapper .ag,
+body .zol-footer .fot-wrapper .ag {
+  display: block;
+  width: 40px;
+  height: 18px;
+  color: #fff;
+  background: #666;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  float: right;
+  margin-right: 50px;
+  padding-bottom: 0;
+  cursor: pointer;
+}
+
+html .zol-footer .fot-wrapper a:hover,
+body .zol-footer .fot-wrapper a:hover {
+  text-decoration: underline;
+}

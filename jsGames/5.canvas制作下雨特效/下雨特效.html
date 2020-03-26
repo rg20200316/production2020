@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        /* width: 500px;
+        height: 500px;
+        margin: 50px auto; */
+        /* background-color: black; */
+    }
+
+    canvas {
+        overflow: hidden;
+    }
+
+    #box {
+        margin: 50px auto;
+        width: 600px;
+        height: 400px;
+        background-image: url(./image/234.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+    }
+</style>
+
+<body>
+    <div id="box">
+        <canvas id="myCanvas" width="600px" height="400px"></canvas>
+    </div>
+</body>
+<script>
+    //Canvas 是HTML5提供的一种新标签。
+    //Canvas 是一个矩形区域的画布，在画布上面我们可以通过javaScript控制每一个像素来绘制图形。
+    /*Canvas 标签使用javaScript在网页上绘制图像，其本身不具备绘图功能。通过使用canvas并调用相关API，
+    可用多种方式来绘制路径、 矩形、 圆形、 字符以及图像等。*/
+    rain();
+    function rain() {
+        var W = 600,
+            H = 400,
+            angle = -5,
+            len = 15,
+            count = 100;
+        var canvas = document.getElementById("myCanvas");
+        ctx = canvas.getContext('2d');
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
+        var run = setInterval(draw, 100);
+        //
+        function draw() {
+            //清除上一帧
+            ctx.clearRect(0, 0, W, H);
+            //重新绘制              
+            xiayus();
+        }
+        //绘制一滴雨
+        function xiayu(x, y) {
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            ctx.lineTo(x + angle, y + len);
+            ctx.lineWidth = 1;
+            ctx.stroke();
+        }
+        function xiayus() {
+            for (var i = 1; i <= count; i++) {
+                xiayu(Math.random() * W, Math.random() * H);
+            }
+        }
+    }
+    // rect();
+    function rect() {
+        //01 获取canvas画布
+        var c = document.getElementById("myCanvas");
+        //02 获取canvas上下文对象
+        var ctx = c.getContext("2d");
+        //填充颜色
+        ctx.fillStyle = "#FF0000";
+        //绘制矩形
+        ctx.fillRect(50, 50, 150, 75);
+    }
+    //  line();
+    function line() {
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.strokeStyle = 'white'
+        ctx.lineTo(600, 400);
+        ctx.stroke();
+    }
+</script>
+
+</html>

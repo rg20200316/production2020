@@ -1,0 +1,414 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+}
+
+body .wrapper {
+  width: 72.68%;
+  height: 472px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+body .wrapper .denglu-header {
+  width: 100%;
+  height: 94px;
+  margin: auto;
+}
+
+body .wrapper .denglu-header .header {
+  height: 54px;
+  padding: 20px 0;
+}
+
+body .wrapper .denglu-header .header .logo img {
+  float: left;
+}
+
+body .wrapper .denglu-header .header .logo p {
+  float: left;
+  text-align: center;
+  padding: 0;
+  margin: 8px 0 0 8px;
+  padding-left: 10px;
+  font: 14px/44px simsun;
+  color: #666;
+  border-left: 1px solid #e6e6e6;
+  cursor: pointer;
+}
+
+body .wrapper .denglu-header .header .register-bar {
+  font: 12px/1.5 Arial;
+  color: #333;
+  text-align: center;
+  float: right;
+  padding: 21px 0 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+body .wrapper .denglu-header .header .register-bar a {
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  height: 16px;
+  padding: 3px 10px;
+  color: #c00;
+  font: normal 14px/14px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+}
+
+body .wrapper .denglu-header .header .register-bar a:hover {
+  background: #dc2e2e;
+  color: #fff;
+}
+
+body .wrapper .denglu-content {
+  width: 100%;
+  flex: 1;
+  margin: auto;
+  margin-top: 27px;
+}
+
+body .wrapper .denglu-content .denglu-wrapper {
+  width: 99.78%;
+  height: 350px;
+  border: 1px solid #e6e6e6;
+  display: flex;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-left {
+  width: 520px;
+  height: 100%;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-left a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-left a img {
+  width: 100%;
+  height: 100%;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right {
+  width: 470px;
+  height: 100%;
+  background: #fff;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main {
+  float: right;
+  padding: 0 85px 0 0;
+  width: 290px;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .denglu-top {
+  width: 290px;
+  height: 35px;
+  position: relative;
+  padding: 20px 0 0;
+  color: #333;
+  display: flex;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .denglu-top h3 {
+  width: 50%;
+  font-weight: normal;
+  border-bottom: 2px solid;
+  text-align: center;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .denglu-top h3:nth-child(1) {
+  border-bottom-color: #de3030;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .denglu-top h3:nth-child(2) {
+  border-bottom-color: #e6e6e6;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .denglu-top h3:hover {
+  cursor: pointer;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu {
+  width: 100%;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-inp {
+  width: 100%;
+  height: 175px;
+  padding: 25px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-inp input {
+  width: 288px;
+  height: 38px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-inp .username {
+  margin-bottom: 10px;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-inp .dong {
+  width: 100%;
+  height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-inp .dong a {
+  display: block;
+  font-size: 11px;
+  text-decoration: none;
+  color: #134ba0;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-inp .dong a i {
+  color: #de3030;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-inp .dong .shoujia {
+  color: #333;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-inp .dong a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-inp .denglu-btn {
+  width: 290px;
+  height: 40px;
+  background: #dd2f2f;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-inp .denglu-btn:hover {
+  background: #bb1717;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-btm {
+  width: 100%;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-btm .btm-top {
+  width: 290px;
+  text-align: center;
+  margin-top: 15px;
+  color: #666666;
+  display: flex;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-btm .btm-top span {
+  display: block;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-btm .btm-top .spleft {
+  float: left;
+  height: 1px;
+  background: #f0f0f0;
+  width: 100px;
+  margin-top: 7px;
+  margin-right: 9px;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-btm .btm-top .spmain {
+  font-size: 12px;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-btm .btm-top .spright {
+  float: right;
+  height: 1px;
+  background: #f0f0f0;
+  width: 100px;
+  margin-top: 7px;
+  margin-left: 9px;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-btm .btm-bott {
+  width: 100%;
+  height: 38px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-btm .btm-bott a {
+  display: block;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  line-height: 38px;
+  text-decoration: none;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-btm .btm-bott a i {
+  font-size: 26px;
+  border-radius: 50% 50%;
+  color: #fff;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-btm .btm-bott a:nth-child(1) i {
+  background-color: green;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-btm .btm-bott a:nth-child(2) i {
+  color: red;
+  background-color: #fff;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-btm .btm-bott a:nth-child(3) i {
+  background-color: #039ae3;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-btm .btm-bott a:nth-child(4) i {
+  background-color: #f57601;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-btm .btm-bott a:nth-child(5) i {
+  color: #2932e1;
+  background-color: #fff;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-btm .btm-bott a:hover i {
+  background-color: #fff;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-btm .btm-bott a:nth-child(1):hover i {
+  color: green;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-btm .btm-bott a:nth-child(2):hover i {
+  color: #fff;
+  background-color: red;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-btm .btm-bott a:nth-child(3):hover i {
+  color: #039ae3;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-btm .btm-bott a:nth-child(4):hover i {
+  color: #f57601;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .user-denglu .denglu-btm .btm-bott a:nth-child(5):hover i {
+  color: #fff;
+  background-color: #2932e1;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .shop-denglu {
+  width: 100%;
+  display: none;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .shop-denglu .denglu-inp {
+  width: 100%;
+  height: 175px;
+  padding: 25px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .shop-denglu .denglu-inp input {
+  width: 288px;
+  height: 38px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .shop-denglu .denglu-inp .shopname {
+  margin-bottom: 10px;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .shop-denglu .denglu-inp .dong {
+  width: 100%;
+  height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .shop-denglu .denglu-inp .dong a {
+  display: block;
+  float: right;
+  font-size: 11px;
+  text-decoration: none;
+  color: #134ba0;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .shop-denglu .denglu-inp .dong a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .shop-denglu .denglu-inp .denglu-btn {
+  width: 290px;
+  height: 40px;
+  background: #dd2f2f;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+body .wrapper .denglu-content .denglu-wrapper .denglu-right .denglu-main .shop-denglu .denglu-inp .denglu-btn:hover {
+  background: #bb1717;
+}
+
+body .denglu-footer {
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
+  border-top: 1px solid #dcdcdc;
+  padding: 12px 0 25px;
+}
+
+body .denglu-footer .fot-wrapper {
+  width: 72.48%;
+  margin: auto;
+}
+
+body .denglu-footer .fot-wrapper .copyrightA {
+  width: 40%;
+  margin: 0 0 0 -10px;
+  font: 12px/24px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+  float: left;
+  color: #9999a6;
+}
+
+body .denglu-footer .fot-wrapper .copyrightA a {
+  margin: 0 10px;
+  color: #666;
+  text-decoration: none;
+  white-space: normal;
+  word-break: keep-all;
+}
+
+body .denglu-footer .fot-wrapper .copyrightA a:hover {
+  text-decoration: underline;
+  color: #c00;
+}
+
+body .denglu-footer .fot-wrapper .copyrightSpan {
+  float: right;
+  color: #666;
+  font: 12px/24px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+}

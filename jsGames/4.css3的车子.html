@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Animations in HTML5 using CSS3 animations</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+            }
+
+            #container {
+                position: relative;
+                width: 100%;
+                height: 600px;
+                overflow: hidden;
+            }
+
+            #car {
+                position: absolute;
+                /*汽车在容器中采用绝对定位*/
+                width: 400px;
+                height: 200px;
+                /*汽车的总高度，包括轮胎和底盘*/
+                z-index: 1;
+                /*让汽车在背景的上方*/
+                top: 300px;
+                /*距顶端的距离(y轴)*/
+                left: 50px;
+                /*距左侧的距离(x轴)*/
+
+                /*赋予该元素预先定义的动画及相关属性*/
+                animation-name: carmove;
+                /*名称*/
+                animation-duration: 10s;
+                /*持续时间*/
+                animation-iteration-count: infinite;
+                /*迭代次数-无限次*/
+                animation-timing-function: linear;
+                /*播放动画时从头到尾都以相同的速度*/
+            }
+
+            /*车身*/
+            #chassis {
+                position: absolute;
+                width: 400px;
+                height: 130px;
+                background: #FF9900;
+                border: 2px solid #FF6600;
+            }
+
+            /*轮胎*/
+            .tire {
+                z-index: 1;
+                /*轮胎也应置于背景的上方*/
+                position: absolute;
+                bottom: 0;
+                border-radius: 60px;
+                /*圆半径*/
+                height: 120px;
+                /* 2*radius=height */
+                width: 120px;
+                /* 2*radius=width */
+                background: #0099FF;
+                /*填充色*/
+                border: 1px solid #3300FF;
+
+                animation-name: tiremove;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            #righttire {
+                right: 20px;
+                /*设置右边的轮胎距离边缘的距离为20*/
+            }
+
+            #lefttire {
+                left: 20px;
+                /*设置左边的轮胎距离边缘的距离为20*/
+            }
+
+            #grass {
+                position: absolute;
+                /*背景绝对定位在容器中*/
+                width: 100%;
+                height: 130px;
+                bottom: 0;
+                /*让背景色线性渐变,bottom,渐变的起始处，第一个颜色值是渐变的起始值，第二个颜色值是终止值 */
+                background: linear-grdaient(bottom, #33CC00, #66FF22);
+                /* 兼容chrome */
+                background: -webkit-linear-gradient(bottom, #33CC00, #66FF22);
+            }
+
+            .hr,
+            .vr {
+                position: absolute;
+                background: #3300FF;
+            }
+
+            .hr {
+                height: 1px;
+                width: 100%;
+                /*轮胎的水平线*/
+                left: 0;
+                top: 60px;
+            }
+
+            .vr {
+                width: 1px;
+                height: 100%;
+                /*轮胎的垂直线*/
+                left: 60px;
+                top: 0;
+            }
+
+            /* 定义车身与轮胎转动的动画 */
+
+            /*定义动画：从-400px的位置移动到1600px的位置 */
+            @keyframes carmove {
+                0% {
+                    left: -400px;
+                }
+
+                /* 0%相当与from */
+                100% {
+                    left: 1000px;
+                }
+
+                /* 100%相当与to */
+            }
+
+            /* 定义轮胎转动的角度 */
+            @keyframes tiremove {
+                0% {
+                    transform: rotate(0);
+                }
+
+                100% {
+                    transform: rotate(1800deg);
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="car">
+                <div id="chassis"></div>
+                <div id="lefttire" class="tire">
+                    <div class="hr"></div>
+                    <div class="vr"></div>
+                </div>
+                <div id="righttire" class="tire">
+                    <div class="hr"></div>
+                    <div class="vr"></div>
+                </div>
+            </div>
+            <div id="grass"></div>
+        </div>
+        <footer></footer>
+    </body>
+
+    </html>

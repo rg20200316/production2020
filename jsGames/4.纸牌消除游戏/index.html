@@ -1,0 +1,134 @@
+<html>
+
+<head>
+	<meta name="" content="" charset="utf-8"/>
+	<title>纸牌消除游戏</title>
+	<style>
+		#desk {
+			height: 560px;
+			width: 400px;
+			background: url(images/table.jpg);
+			position: relative;
+			margin: 20px auto;
+			padding-left: 90px;
+			padding-right: 90px;
+			padding-top: 20px;
+		}
+
+		.card {
+			width: 80px;
+			height: 120px;
+			margin: 20px 20px 20px 0px;
+			position: relative;
+			float: left;
+		}
+
+		.front {
+			width: 80px;
+			height: 120px;
+			background: url("images/deck.png") -240px 0px;
+			position: absolute;
+		}
+
+		.back {
+			width: 80px;
+			height: 120px;
+			background: url("images/deck.png") 0px 120px;
+			position: absolute;
+		}
+	</style>
+</head>
+
+<body style="background:url(images/bg.jpg)">
+	<div id="desk">
+		<div id="card" class="card">
+			<div class="front"></div>
+			<div class="back" title="1" onclick="hide(this)"></div>
+		</div>
+	</div>
+</body>
+<script>
+	var card = document.getElementById("card");
+	var desk = document.getElementById("desk");
+	for (var i = 0; i < 11; i++) {
+		//克隆card div 12个
+		var node = card.cloneNode(true);
+		//把节点加入到".desk"div中
+		desk.appendChild(node);
+	}
+
+	var cardsIdx = [0, 1, 2, 3, 4, 13, 0, 1, 2, 3, 4, 13]//用数组表示每张牌
+	//数组排序,调用函数sortType使数组随机排序
+	function sortType() {
+		return Math.random() > 0.5 ? -1 : 1;
+	}
+	cardsIdx.sort(sortType);
+	/*给每个".back"div一个title属性，并把随机排序的数组值赋给title
+	给每个".front"div设置背景*/
+	var aFront = document.getElementsByClassName("front");
+	var aBack = document.getElementsByClassName("back");
+	for (var j = 0; j < aFront.length; j++) {
+		var idx = cardsIdx[j];
+		aBack[j].title = idx;
+		//通过改变精灵图的位置设置背景图片
+		aFront[j].style.background = "url('images/deck.png')-" + (idx * 80) + "px -" + (parseInt(idx / 13) * 120) + "px";
+	}
+
+	var num = 0;//计数，记录点击的次数（点击一次num=0）
+	var clickNodes = new Array();//创建一个新数组，放入被点击".back"div对象
+
+
+
+	//判断两张牌是否相同
+	var reset = function () {
+		var data1 = clickNodes[0].title;
+		var data2 = clickNodes[1].title;
+		if (data1 == data2) {
+			/*titlt值相等说明两张牌相等，相等则将父级（".card")变为不可见
+			visibility与display区别：前者隐藏后会占位置*/
+			clickNodes[0].parentNode.style.visibility = "hidden";
+			clickNodes[1].parentNode.style.visibility = "hidden";
+		}
+		else {
+			for (var i = 0; i < clickNodes.length; i++) {
+				clickNodes[i].style.display = "block";
+			}
+		}
+		//把num重置为0
+		num = 0;
+	}
+
+
+	//点击事件
+	function hide(node) {
+
+		//没有点击的时候
+		var timer = function () {
+			node.style.display = "block";
+			num = 0
+		}
+		if (num < 2) {
+			/*点击次数为一次或两次都将被点击的".back"div隐藏，
+			并将点击对象放入数组clickNodes*/
+			node.style.display = "none";
+			clickNodes[num] = node;
+		}
+
+		num++;
+		if (num == 1) {
+			clearTimeout(timer);
+			/*点第一次没有点第二次时把".back"div显示出来，
+			并在定时器timer中把num置为0（没有点击过的状态）*/
+			setTimeout(timer, 1000);
+		}
+		if (num == 2) {
+			clearTimeout(reset);
+			//点击两次后开启reset定时器判断两张牌是否相等
+			setTimeout(reset, 500);
+		}
+
+	}
+
+</script>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>单品团_ZOL团购-ZOL商城</title>
+    <link rel="stylesheet" href="../../sass/common/zolTopbar.css">
+    <link rel="stylesheet" href="../../sass/common/zolHeader.css">
+    <link rel="stylesheet" href="../../sass/liebiaoyeCss/liebiaoye.css">
+    <link rel="stylesheet" href="../../sass/indexCss/zolBtmbar.css">
+    <link rel="stylesheet" href="../../sass/common/zolFooter.css">
+</head>
+
+<body>
+    <!-- 公共顶部 -->
+    <div class="zol-topbar">
+        <div class="wrapper">
+            <div class="topbar-login">
+                <span class="topbar-left-home">
+                    <a href="../../01index.html">商城首页</a>
+                </span>
+                <span class="topbar-left-login">Hi~欢迎来到Z商城，请
+                    <a href="denglu.html">登录</a>
+                </span>
+                <span class="topbar-left-register">
+                    <a href="zhuce.html">免费注册</a>
+                    <a style="display: none;" href="denglu.html">[退出]</a>
+                </span>
+            </div>
+            <div class="topbar-menu">
+                <ul>
+                    <li><a href="###">我的订单</a></li>
+                    <li>
+                        <a href="###" class="zol-mj">买家中心
+                            <i class="iconfont icon-jiankuohaoxixia zol-jkh-dwon"></i>
+                            <i class="iconfont icon-arrow-up zol-jkh-up"></i>
+                        </a>
+                        <div class="zol-mj-gz">
+                            <a href="###">关注的店铺<span class="dianpu">0</span></a>
+                            <a href="###">关注的商品<span class="shangpin">0</span></a>
+                        </div>
+                    </li>
+                    <li><a href="###">购物车0件</a></li>
+                    <li><a href="###">帮助中心</a></li>
+                    <li><a href="###">|</a></li>
+                    <li class="moblie">
+                        <a href="###" class="mb-shop">手机商城
+                            <i class="iconfont icon-jiankuohaoxixia zol-jkh-dwon"></i>
+                            <i class="iconfont icon-arrow-up zol-jkh-up"></i>
+                        </a>
+                        <div class="zol-erwma">
+                            <img src="../../src/img/index_img/shop_wechat.png" alt="">
+                        </div>
+                    </li>
+                    <li><a href="###">中关村在线</a></li>
+                    <li><a href="###">招商合作</a></li>
+                    <li>
+                        <a href="###" class="zol-server">联系客服
+                            <i class="iconfont icon-jiankuohaoxixia zol-jkh-dwon"></i>
+                            <i class="iconfont icon-arrow-up zol-jkh-up"></i>
+                        </a>
+                        <div class="server">
+                            <span>010-</span>
+                            <span>8341888-</span>
+                            <span>9185</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 公共头部 -->
+    <div id="liehead"></div>
+    <!-- 吸顶 隐藏 今日团-->
+    <div id="suction-tip" class="zol-main-bHader">
+        <div class="clearfix today-tit">
+            <h3 class="fl">今日团</h3>
+            <ul class="style-list fr"></ul>
+        </div>
+        <div class="suction-tip marginT">
+            <ul class="clearfix sorts">
+                <a href="/index.php?c=List&amp;a=JinRiTuan">
+                    <li class="default active">默认</li>
+                </a>
+                <a href="/index.php?c=List&amp;a=JinRiTuan&amp;sort=start_time">
+                    <li class="">最新团购</li>
+                </a>
+                <a href="/index.php?c=List&amp;a=JinRiTuan&amp;sort=sale_num">
+                    <li class="volume ">销量
+                        <b class="arrow-down"></b>
+                    </li>
+                </a>
+                <a href="/index.php?c=List&amp;a=JinRiTuan&amp;sort=tuan_price">
+                    <li class="price ">价格<b class="arrow-up"></b></li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <!--列表页 -->
+    <div id="liecontent">
+        <ul id="commodity-list" class="commodity-list zol-main-bBody">
+        </ul>
+        <p id="dinaji">点击加载更多</p>
+        <p id="load"><img src="../../src/img/loading.gif" alt=""></p>
+    </div>
+    <!-- 公共底部 -->
+    <div class="zol-btmbar">
+        <div class="btn-wrapper">
+            <div class="btn-wleft"></div>
+            <div class="btn-wright">
+                <p class="erwm-img">
+                    <img src="../../src/img/index_img/zolDingYue.jpg" style=" width: 106px;height: 106px;" alt="">
+                </p>
+                <p class="guanzhu"> 微信关注：Z商城</p>
+                <p class="dingdan">扫码赢优惠 订单时时查</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 公共尾部 -->
+    <div id="liefoot"></div>
+</body>
+
+<script src="../js/common.js"></script>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/zolindexgoodlist.js"></script>
+<script src="../js/liebiaoyeXiding.js"></script>
+<script src="../js/liebieye.js"></script>
+
+<script>
+    // $('#lietop').load('zolTop.html');
+    $('#liehead').load('zolHead.html');
+    $('#liefoot').load('zolFoot.html');
+</script>
+
+<script src="../js/regCookies.js"></script>
+
+</html>

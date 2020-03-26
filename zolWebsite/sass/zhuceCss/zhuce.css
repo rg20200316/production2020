@@ -1,0 +1,265 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  margin-top: 50px;
+}
+
+body #zhuce {
+  width: 100%;
+}
+
+body #zhuce .zhuce-header {
+  width: 72.68%;
+  height: 94px;
+  margin: auto;
+}
+
+body #zhuce .zhuce-header .header {
+  height: 54px;
+  padding: 20px 0;
+}
+
+body #zhuce .zhuce-header .header .logo img {
+  float: left;
+}
+
+body #zhuce .zhuce-header .header .logo p {
+  float: left;
+  text-align: center;
+  padding: 0;
+  margin: 8px 0 0 8px;
+  padding-left: 10px;
+  font: 14px/44px simsun;
+  color: #666;
+  border-left: 1px solid #e6e6e6;
+  cursor: pointer;
+}
+
+body #zhuce .zhuce-header .header .register-bar {
+  font: 12px/1.5 Arial;
+  color: #333;
+  text-align: center;
+  float: right;
+  padding: 21px 0 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+body #zhuce .zhuce-header .header .register-bar a {
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  height: 16px;
+  padding: 3px 10px;
+  color: #c00;
+  font: normal 14px/14px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+}
+
+body #zhuce .zhuce-header .header .register-bar a:hover {
+  background: #dc2e2e;
+  color: #fff;
+}
+
+body #zhuce .zhuce-content {
+  width: 72.48%;
+  height: 766px;
+  border: 1px solid #ccc;
+  margin: auto;
+}
+
+body #zhuce .zhuce-content .title {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 18px;
+  color: #9999a6;
+  background: #fafafa;
+}
+
+body #zhuce .zhuce-content .zhu-wrapper {
+  width: 100%;
+  height: 706px;
+  overflow: hidden;
+}
+
+body #zhuce .zhuce-content .zhu-wrapper .zhu-content {
+  width: 500px;
+  height: 676px;
+  float: left;
+  margin-left: 88px;
+  margin-top: 30px;
+}
+
+body #zhuce .zhuce-content .zhu-wrapper .zhu-content #phoneZhu {
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #e6e6e6;
+  list-style: none;
+}
+
+body #zhuce .zhuce-content .zhu-wrapper .zhu-content #phoneZhu .current {
+  width: 50%;
+  height: 38px;
+  padding-top: 1px;
+  border-top: 2px solid #e02d2d;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  background: #fff;
+  color: #cc0000;
+  line-height: 38px;
+  text-align: center;
+}
+
+body #zhuce .zhuce-content .zhu-wrapper .zhu-content #phoneZhu .current i {
+  color: #ff3333;
+}
+
+body #zhuce .zhuce-content .zhu-wrapper .zhu-content .content {
+  margin-top: 30px;
+}
+
+body #zhuce .zhuce-content .zhu-wrapper .zhu-content .content .register-form {
+  position: relative;
+  margin: 0 0 42px;
+  padding: 0 0 0 83px;
+  zoom: 1;
+}
+
+body #zhuce .zhuce-content .zhu-wrapper .zhu-content .content .register-form .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 83px;
+  font: 14px/40px "Arial";
+  text-align: right;
+  color: #666;
+}
+
+body #zhuce .zhuce-content .zhu-wrapper .zhu-content .content .register-form .label .xh {
+  color: #ff335d;
+}
+
+body #zhuce .zhuce-content .zhu-wrapper .zhu-content .content .register-form i {
+  display: block;
+  color: #c00;
+  font: 10px/40px "Arial";
+  position: absolute;
+  top: 0;
+  left: 370px;
+}
+
+body #zhuce .zhuce-content .zhu-wrapper .zhu-content .content .register-form .text {
+  display: block;
+  margin: 0 10px 0 0;
+  padding: 8px 5px;
+  width: 248px;
+  height: 22px;
+  border: 1px solid;
+  outline: none;
+  border-color: #ccc;
+}
+
+body #zhuce .zhuce-content .zhu-wrapper .zhu-content .content .register-form #phone_yanZma {
+  display: block;
+  margin: 0 10px 0 0;
+  padding: 8px 5px;
+  width: 128px;
+  height: 22px;
+  border: 1px solid;
+  border-color: #ccc;
+}
+
+body #zhuce .zhuce-content .zhu-wrapper .zhu-content .content .register-form #yzma {
+  display: block;
+  margin: 0 10px 0 0;
+  padding: 8px 5px;
+  width: 110px;
+  height: 40px;
+  border: 1px solid;
+  border-color: #ccc;
+  outline: none;
+  position: absolute;
+  top: 0;
+  left: 250px;
+  cursor: pointer;
+}
+
+body #zhuce .zhuce-content .zhu-wrapper .zhu-content .content .register-form .tips {
+  position: absolute;
+  top: 47px;
+  left: 83px;
+  color: #aaa;
+  font-size: 10px;
+}
+
+body #zhuce .zhuce-content .zhu-wrapper .zhu-content .content .agreement {
+  display: block;
+  padding: 0 0 0 83px;
+  height: 32px;
+  font: 12px/32px "Arial";
+  color: #999;
+}
+
+body #zhuce .zhuce-content .zhu-wrapper .zhu-content .content .register-btn {
+  display: block;
+  margin: 20px 0 0 83px;
+  width: 290px;
+  height: 40px;
+  font: bold 14px/40px "Arial";
+  color: #fff;
+  text-align: center;
+  border: 0 none;
+  background-position: 0 0;
+  cursor: pointer;
+  outline: none;
+  background: #dc2e2e;
+}
+
+body #zhuce .zhuce-content .zhu-wrapper .zhu-content .content .register-btn:hover {
+  background: #cc0000;
+}
+
+body #zhuce .zhuce-footer {
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
+  border-top: 1px solid #dcdcdc;
+  padding: 12px 0 25px;
+}
+
+body #zhuce .zhuce-footer .fot-wrapper {
+  width: 72.48%;
+  margin: auto;
+}
+
+body #zhuce .zhuce-footer .fot-wrapper .copyrightA {
+  width: 40%;
+  margin: 0 0 0 -10px;
+  font: 12px/24px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+  float: left;
+  color: #9999a6;
+}
+
+body #zhuce .zhuce-footer .fot-wrapper .copyrightA a {
+  margin: 0 10px;
+  color: #666;
+  text-decoration: none;
+  white-space: normal;
+  word-break: keep-all;
+}
+
+body #zhuce .zhuce-footer .fot-wrapper .copyrightA a:hover {
+  text-decoration: underline;
+  color: #c00;
+}
+
+body #zhuce .zhuce-footer .fot-wrapper .copyrightSpan {
+  float: right;
+  color: #666;
+  font: 12px/24px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+}
