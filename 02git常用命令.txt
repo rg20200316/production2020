@@ -1,0 +1,53 @@
+git init-------初始化一个仓库
+ssh-keygen -t rsa -C "youremail@example.com"-------生成ssh公钥
+git add . ------添加文件到暂存区
+git commit -m '提交说明' -----提交暂存到当前分支
+git clone 项目地址 ----从远程库克隆项目
+git remote -v -----查看远程仓库
+git push 远程分支名 master -----提交本地分支到远程
+git pull 远程分支名  本地分支名  -----拉取分支
+git push -f 远程仓库名 master -----强制提交覆盖远程分支
+git remote add gitee2 git@gitee.com:divhub/ErJieDuan.git ---关联一个远程仓库
+git config --global user.name "***" ----本地用户名
+git config –-global user.email "*****"-----本地邮箱
+git branch -a-----查看所有分支
+git branch-----命令会列出所有分支，当前分支前面会标一个*号
+git branch -d 分支名-----删除一个本地分支
+git remote rm 仓库名----删除一个远程仓库
+git checkout 分支名-----切换到某分支
+git log----查看提交记录
+git log --pretty=oneline----查看提交记录简略信息
+git checkout -- 文件名-----丢弃工作区修改
+git reset --hard HEAD^----回滚至上一个版本，可丢弃暂存区修改
+git reset --hard 提交的id-----回滚至指定版本
+git rm ------删除文件
+git checkout -b 分支名 ------创建一个分支并切换到该分支
+git merge 分支名-----合并指定分支到当前分支
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+1. 复制仓库地址 https://github.com/Liting1/liting1.github.io.git
+
+2. 打开本地git客户端， 鼠标右键git bash here
+
+3. 下载远程的文件到本地 git clone https://github.com/Liting1/liting1.github.io.git
+
+4. 在刚刚下载的文件夹中添加文件或者文件夹（注意：.git文件夹是不能删除的）
+
+5. 把文件提交到缓冲区  git add .
+
+6. 把文件提交到本地仓储 git commit -m '你这次上传文件的说明'
+
+7. 上传到远程仓储 git push origin master
+
+8. 输入你的github账号还有密码 ，如果账号密码错误， 从新执行步骤 7
+
+
+
+
+
+
+
+
+
+
+
