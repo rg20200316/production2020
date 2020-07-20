@@ -1,0 +1,85 @@
+{
+    "code": 1,
+    "data": [
+        {
+            "id": 1041,
+            "name": "花筑·无锡潘艺术酒店 ",
+            "nameEn": "Huazhu · wuxi pan art hotel ",
+            "highlightName": "花筑·无锡潘艺术<em>酒</em><em>店</em> ",
+            "city": 194,
+            "cityName": "无锡 "
+        },
+        {
+            "id": 749,
+            "name": "索性酒店(重庆永川客运中心商贸城店) ",
+            "nameEn": "索性酒店(重庆永川客运中心商贸城店) ",
+            "highlightName": "索性<em>酒</em><em>店</em>(重庆永川客运中心商贸城店) ",
+            "city": 356,
+            "cityName": "重庆 "
+        },
+        {
+            "id": 32,
+            "name": "花筑·清迈河畔酒店 Riverside Floral Inn ",
+            "nameEn": "Riverside Floral Inn ",
+            "highlightName": "花筑·清迈河畔<em>酒</em><em>店</em> Riverside Floral Inn ",
+            "city": 1414,
+            "cityName": "清迈 "
+        },
+        {
+            "id": 66,
+            "name": "花筑·丽江古城沁园客栈 ",
+            "nameEn": "Floral Hotel · Qin Lijiang ",
+            "highlightName": null,
+            "city": 3,
+            "cityName": "丽江 "
+        },
+        {
+            "id": 60,
+            "name": "花筑·杭州漫居度假酒店 ",
+            "nameEn": "Floral Hotel · Meander Tree Hangzhou ",
+            "highlightName": "花筑·杭州漫居度假<em>酒</em><em>店</em> ",
+            "city": 245,
+            "cityName": "杭州 "
+        },
+        {
+            "id": 1225,
+            "name": "柏纳酒店(张家界武陵源标志门店) ",
+            "nameEn": "Urba Hotel Wu Ling Yuan Biao Zhi Men Zhangjiajie ",
+            "highlightName": "柏纳<em>酒</em><em>店</em>(张家界武陵源标志门店) ",
+            "city": 291,
+            "cityName": "张家界 "
+        },
+        {
+            "id": 400,
+            "name": "花筑·厦门梦楼客栈 ",
+            "nameEn": "Floral Hotel·Meng  Xiamen ",
+            "highlightName": null,
+            "city": 319,
+            "cityName": "厦门 "
+        },
+        {
+            "id": 59,
+            "name": "花筑·莫干山翠域度假别墅酒店 ",
+            "nameEn": "花筑·莫干山翠域度假别墅酒店 ",
+            "highlightName": "花筑·莫干山翠域度假别墅<em>酒</em><em>店</em> ",
+            "city": 247,
+            "cityName": "湖州 "
+        },
+        {
+            "id": 168,
+            "name": "花筑悦·南京家墅会精品酒店 ",
+            "nameEn": "花筑悦·南京家墅会精品酒店 ",
+            "highlightName": "花筑悦·南京家墅会精品<em>酒</em><em>店</em> ",
+            "city": 188,
+            "cityName": "南京 "
+        },
+        {
+            "id": 959,
+            "name": "柏纳酒店(西安高铁北站行政中心店) ",
+            "nameEn": "Urba  Hotel (Xi'an Fengcheng 7th Road Sweet Hotel) ",
+            "highlightName": "柏纳<em>酒</em><em>店</em>(西安高铁北站行政中心店) ",
+            "city": 365,
+            "cityName": "西安 "
+        }
+    ]
+}

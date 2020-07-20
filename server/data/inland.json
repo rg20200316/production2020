@@ -1,0 +1,2261 @@
+{
+    "code": 1,
+    "data": [
+        {
+            "code": 1,
+            "msg": "success",
+            "errors": null,
+            "data": {
+                "inland": {
+                    "hotDestinations": [
+                        {
+                            "id": 107,
+                            "destination": "深 圳",
+                            "type": 2,
+                            "landmark": 0,
+                            "landmarkName": null,
+                            "city": 144,
+                            "cityName": "深圳",
+                            "province": 13,
+                            "provinceName": "广 东",
+                            "country": 1,
+                            "countryName": "中国",
+                            "timezone": 0,
+                            "timeZone": 8,
+                            "img": "https://static.lvyuetravel.com/lvyue/home/image/201912/34a9bccb-685d-4c70-a673-fb70fb4c2ca6.jpg",
+                            "orderNum": 1
+                        },
+                        {
+                            "id": 106,
+                            "destination": "嘉兴",
+                            "type": 2,
+                            "landmark": 0,
+                            "landmarkName": null,
+                            "city": 243,
+                            "cityName": "嘉兴",
+                            "province": 20,
+                            "provinceName": "浙江",
+                            "country": 1,
+                            "countryName": "中国",
+                            "timezone": 0,
+                            "timeZone": 8,
+                            "img": "https://static.lvyuetravel.com/lvyue/home/image/201912/a14095d9-19ea-4de6-a9a4-d2a97b35785f.jpg",
+                            "orderNum": 2
+                        },
+                        {
+                            "id": 80,
+                            "destination": "大理",
+                            "type": 2,
+                            "landmark": 0,
+                            "landmarkName": null,
+                            "city": 5,
+                            "cityName": "大理",
+                            "province": 2,
+                            "provinceName": "云南",
+                            "country": 1,
+                            "countryName": "中国",
+                            "timezone": 0,
+                            "timeZone": 8,
+                            "img": "https://static.lvyuetravel.com/lvyue/home/image/201912/0c74a617-b204-40bf-9a34-018fed4b9c81.jpg",
+                            "orderNum": 3
+                        },
+                        {
+                            "id": 89,
+                            "destination": "丽江",
+                            "type": 2,
+                            "landmark": 0,
+                            "landmarkName": null,
+                            "city": 3,
+                            "cityName": "丽江",
+                            "province": 2,
+                            "provinceName": "云南",
+                            "country": 1,
+                            "countryName": "中国",
+                            "timezone": 0,
+                            "timeZone": 8,
+                            "img": "https://static.lvyuetravel.com/lvyue/home/image/201912/1c526c01-88a4-45a1-a087-bfc806a0968a.jpg",
+                            "orderNum": 4
+                        },
+                        {
+                            "id": 111,
+                            "destination": "桂林",
+                            "type": 2,
+                            "landmark": 0,
+                            "landmarkName": null,
+                            "city": 158,
+                            "cityName": "桂林",
+                            "province": 14,
+                            "provinceName": "广西",
+                            "country": 1,
+                            "countryName": "中国",
+                            "timezone": 0,
+                            "timeZone": 8,
+                            "img": "https://static.lvyuetravel.com/lvyue/home/image/201912/cf33f2a8-8a82-4e51-b6a8-43d5c95843ae.jpg",
+                            "orderNum": 5
+                        },
+                        {
+                            "id": 110,
+                            "destination": "上海",
+                            "type": 2,
+                            "landmark": 0,
+                            "landmarkName": null,
+                            "city": 1,
+                            "cityName": "上海",
+                            "province": 1,
+                            "provinceName": "上海",
+                            "country": 1,
+                            "countryName": "中国",
+                            "timezone": 0,
+                            "timeZone": 8,
+                            "img": "https://static.lvyuetravel.com/lvyue/home/image/201912/87c4f07c-1e16-4f55-87c5-e2c1268071ed.jpg",
+                            "orderNum": 6
+                        },
+                        {
+                            "id": 101,
+                            "destination": "重庆",
+                            "type": 2,
+                            "landmark": 0,
+                            "landmarkName": null,
+                            "city": 356,
+                            "cityName": "重庆",
+                            "province": 30,
+                            "provinceName": "重庆",
+                            "country": 1,
+                            "countryName": "中国",
+                            "timezone": 0,
+                            "timeZone": 8,
+                            "img": "https://static.lvyuetravel.com/lvyue/home/image/201912/13866320-04bb-41d8-b9d0-9fb48468e010.jpg",
+                            "orderNum": 8
+                        },
+                        {
+                            "id": 105,
+                            "destination": "成都",
+                            "type": 2,
+                            "landmark": 0,
+                            "landmarkName": null,
+                            "city": 70,
+                            "cityName": "成都",
+                            "province": 7,
+                            "provinceName": "四川",
+                            "country": 1,
+                            "countryName": "中国",
+                            "timezone": 0,
+                            "timeZone": 8,
+                            "img": "https://static.lvyuetravel.com/lvyue/home/image/201912/451c9404-a468-412d-b139-c3b9e56c93b0.jpg",
+                            "orderNum": 9
+                        },
+                        {
+                            "id": 102,
+                            "destination": "西安",
+                            "type": 2,
+                            "landmark": 0,
+                            "landmarkName": null,
+                            "city": 365,
+                            "cityName": "西安",
+                            "province": 31,
+                            "provinceName": "陕西",
+                            "country": 1,
+                            "countryName": "中国",
+                            "timezone": 0,
+                            "timeZone": 8,
+                            "img": "https://static.lvyuetravel.com/lvyue/home/image/201912/14e1149f-bfc8-43a0-9eff-9a0e0a186adc.jpg",
+                            "orderNum": 9
+                        }
+                    ],
+                    "cities": [
+                        {
+                            "minSort": 130,
+                            "code": 20,
+                            "name": "浙江",
+                            "cityInfos": [
+                                {
+                                    "id": 3,
+                                    "name": "南浔",
+                                    "parentName": "湖州",
+                                    "parentId": 247,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 32,
+                                    "name": "西湖",
+                                    "parentName": "杭州",
+                                    "parentId": 245,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                },
+                                {
+                                    "id": 251,
+                                    "name": "金华",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 27,
+                                    "name": "千岛湖",
+                                    "parentName": "杭州",
+                                    "parentId": 245,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 249,
+                                    "name": "舟山",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 248,
+                                    "name": "绍兴",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 247,
+                                    "name": "湖州",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                },
+                                {
+                                    "id": 246,
+                                    "name": "温州",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 245,
+                                    "name": "杭州",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 3
+                                },
+                                {
+                                    "id": 244,
+                                    "name": "宁波",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 243,
+                                    "name": " 嘉兴",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                },
+                                {
+                                    "id": 51,
+                                    "name": "桐乡",
+                                    "parentName": "杭州",
+                                    "parentId": 245,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 242,
+                                    "name": "台州",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 50,
+                                    "name": "德清",
+                                    "parentName": "湖州",
+                                    "parentId": 247,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 241,
+                                    "name": "丽水",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 42,
+                                    "name": "西塘",
+                                    "parentName": "嘉兴",
+                                    "parentId": 243,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                },
+                                {
+                                    "id": 8,
+                                    "name": "乌镇",
+                                    "parentName": "嘉兴",
+                                    "parentId": 243,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                },
+                                {
+                                    "id": 5,
+                                    "name": "安吉",
+                                    "parentName": "湖州",
+                                    "parentId": 247,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                },
+                                {
+                                    "id": 4,
+                                    "name": "莫干山",
+                                    "parentName": "湖州",
+                                    "parentId": 247,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 127,
+                            "code": 2,
+                            "name": "云南",
+                            "cityInfos": [
+                                {
+                                    "id": 62,
+                                    "name": "丽 江古城",
+                                    "parentName": "丽江",
+                                    "parentId": 3,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                },
+                                {
+                                    "id": 29,
+                                    "name": "大理 古城",
+                                    "parentName": "大理",
+                                    "parentId": 5,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                },
+                                {
+                                    "id": 28,
+                                    "name": "洱海",
+                                    "parentName": "大理",
+                                    "parentId": 5,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 17,
+                                    "name": "迪庆",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 16,
+                                    "name": "西双版纳",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 17,
+                                    "name": "和顺古镇",
+                                    "parentName": "保山",
+                                    "parentId": 4,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 49,
+                                    "name": "束河古镇",
+                                    "parentName": "丽江",
+                                    "parentId": 3,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                },
+                                {
+                                    "id": 15,
+                                    "name": "红河",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 16,
+                                    "name": "香格里拉",
+                                    "parentName": "迪庆",
+                                    "parentId": 17,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 14,
+                                    "name": "玉溪",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 11,
+                                    "name": "普洱",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 9,
+                                    "name": "昆明",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 8,
+                                    "name": "文山",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 5,
+                                    "name": "大理",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                },
+                                {
+                                    "id": 4,
+                                    "name": "保山",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 3,
+                                    "name": "丽江",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 4
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 65,
+                            "code": 16,
+                            "name": "江苏",
+                            "cityInfos": [
+                                {
+                                    "id": 19,
+                                    "name": "同里古镇",
+                                    "parentName": "苏州",
+                                    "parentId": 198,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 194,
+                                    "name": "无锡",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 1
+                                },
+                                {
+                                    "id": 193,
+                                    "name": "扬州",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 192,
+                                    "name": "徐州",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 210
+                                },
+                                {
+                                    "id": 188,
+                                    "name": "南京",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                },
+                                {
+                                    "id": 199,
+                                    "name": "连云港",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 198,
+                                    "name": "苏州",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 20,
+                                    "name": "东山古镇",
+                                    "parentName": "苏州",
+                                    "parentId": 198,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 32,
+                            "code": 13,
+                            "name": "广东",
+                            "cityInfos": [
+                                {
+                                    "id": 146,
+                                    "name": "湛江",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 145,
+                                    "name": "清远",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 144,
+                                    "name": "深圳",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 8
+                                },
+                                {
+                                    "id": 143,
+                                    "name": "河源",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 137,
+                                    "name": "惠州",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 136,
+                                    "name": "广州",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 10
+                                },
+                                {
+                                    "id": 135,
+                                    "name": "佛山",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 10
+                                },
+                                {
+                                    "id": 151,
+                                    "name": "阳江",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 150,
+                                    "name": "茂名",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 148,
+                                    "name": "珠海",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 7
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 32,
+                            "code": 14,
+                            "name": "广西",
+                            "cityInfos": [
+                                {
+                                    "id": 31,
+                                    "name": "龙胜",
+                                    "parentName": "桂林",
+                                    "parentId": 158,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 158,
+                                    "name": "桂林",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 208
+                                },
+                                {
+                                    "id": 157,
+                                    "name": "柳州",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 45,
+                                    "name": "龙脊梯田",
+                                    "parentName": "桂林",
+                                    "parentId": 158,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 155,
+                                    "name": "崇左",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 154,
+                                    "name": "南宁",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 153,
+                                    "name": "北海",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 41,
+                                    "name": "涠洲岛",
+                                    "parentName": "北海",
+                                    "parentId": 153,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 55,
+                                    "name": "两江四湖景区",
+                                    "parentName": "桂林",
+                                    "parentId": 158,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 165,
+                                    "name": "钦州",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 21,
+                                    "name": "阳朔",
+                                    "parentName": "桂林",
+                                    "parentId": 158,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 208
+                                },
+                                {
+                                    "id": 164,
+                                    "name": "贺州",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 31,
+                            "code": 23,
+                            "name": "湖南",
+                            "cityInfos": [
+                                {
+                                    "id": 1,
+                                    "name": "凤凰",
+                                    "parentName": "湘西",
+                                    "parentId": 296,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                },
+                                {
+                                    "id": 301,
+                                    "name": "长沙",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 10
+                                },
+                                {
+                                    "id": 296,
+                                    "name": "湘西",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                },
+                                {
+                                    "id": 295,
+                                    "name": "湘潭",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 291,
+                                    "name": "张家界",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 99
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 30,
+                            "code": 11,
+                            "name": "山东",
+                            "cityInfos": [
+                                {
+                                    "id": 111,
+                                    "name": "济南",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 110,
+                                    "name": "泰安",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 109,
+                                    "name": "枣庄",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 108,
+                                    "name": "日照",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 44,
+                                    "name": "泰山",
+                                    "parentName": "泰安",
+                                    "parentId": 110,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 43,
+                                    "name": "台 儿庄古城",
+                                    "parentName": "枣庄",
+                                    "parentId": 109,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 105,
+                                    "name": "临沂",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 205
+                                },
+                                {
+                                    "id": 120,
+                                    "name": "青岛",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 117,
+                                    "name": "聊城",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 116,
+                                    "name": "烟台",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 28,
+                            "code": 26,
+                            "name": "福建",
+                            "cityInfos": [
+                                {
+                                    "id": 322,
+                                    "name": "漳州",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 18,
+                                    "name": "武夷山",
+                                    "parentName": "南平",
+                                    "parentId": 318,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 48,
+                                    "name": "云水谣景区",
+                                    "parentName": "漳州",
+                                    "parentId": 322,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 319,
+                                    "name": "厦门",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 318,
+                                    "name": "南平",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 30,
+                                    "name": "鼓浪屿",
+                                    "parentName": "厦门",
+                                    "parentId": 319,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 317,
+                                    "name": "三明",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 40,
+                                    "name": "云水谣",
+                                    "parentName": "漳州",
+                                    "parentId": 322,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 38,
+                                    "name": "曾厝垵",
+                                    "parentName": "厦门",
+                                    "parentId": 319,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 323,
+                                    "name": "福州",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 21,
+                            "code": 28,
+                            "name": "贵州",
+                            "cityInfos": [
+                                {
+                                    "id": 338,
+                                    "name": "铜仁",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 2,
+                                    "name": "荔波",
+                                    "parentName": "黔南",
+                                    "parentId": 340,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                },
+                                {
+                                    "id": 337,
+                                    "name": "遵义",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 336,
+                                    "name": "贵阳",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 9
+                                },
+                                {
+                                    "id": 335,
+                                    "name": "毕节",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 334,
+                                    "name": "安顺",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 341,
+                                    "name": "黔西南",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 340,
+                                    "name": "黔南",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                },
+                                {
+                                    "id": 36,
+                                    "name": "千户苗寨景区",
+                                    "parentName": "贵阳",
+                                    "parentId": 336,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 9
+                                },
+                                {
+                                    "id": 339,
+                                    "name": "黔东南",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 20,
+                            "code": 7,
+                            "name": "四川",
+                            "cityInfos": [
+                                {
+                                    "id": 34,
+                                    "name": "都江堰",
+                                    "parentName": "成都",
+                                    "parentId": 70,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 81,
+                                    "name": "雅安",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 33,
+                                    "name": "稻城",
+                                    "parentName": "甘孜",
+                                    "parentId": 73,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 64,
+                                    "name": "南充",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 61,
+                                    "name": "乐山",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 75,
+                                    "name": "绵阳",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 11,
+                                    "name": "阆中古城",
+                                    "parentName": "南充",
+                                    "parentId": 64,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 73,
+                                    "name": "甘孜",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 70,
+                                    "name": "成都",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 3
+                                },
+                                {
+                                    "id": 67,
+                                    "name": "广元",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 19,
+                            "code": 10,
+                            "name": "安徽",
+                            "cityInfos": [
+                                {
+                                    "id": 98,
+                                    "name": "芜湖",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 15,
+                                    "name": "黄山景区",
+                                    "parentName": "黄山",
+                                    "parentId": 103,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                },
+                                {
+                                    "id": 94,
+                                    "name": "池州",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 60,
+                                    "name": "九华山",
+                                    "parentName": "池州",
+                                    "parentId": 94,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 89,
+                                    "name": "六安",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 103,
+                                    "name": "黄山",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 19,
+                            "code": 17,
+                            "name": "江西",
+                            "cityInfos": [
+                                {
+                                    "id": 210,
+                                    "name": "赣州",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 208,
+                                    "name": "景 德镇",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 203,
+                                    "name": "南昌",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 202,
+                                    "name": "九江",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                },
+                                {
+                                    "id": 201,
+                                    "name": "上饶",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 23,
+                                    "name": "庐山景区",
+                                    "parentName": "九江",
+                                    "parentId": 202,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                },
+                                {
+                                    "id": 54,
+                                    "name": "婺源",
+                                    "parentName": "上饶",
+                                    "parentId": 201,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 18,
+                            "code": 12,
+                            "name": "山西",
+                            "cityInfos": [
+                                {
+                                    "id": 64,
+                                    "name": "五台山",
+                                    "parentName": "忻州",
+                                    "parentId": 125,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 126,
+                                    "name": "晋中",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                },
+                                {
+                                    "id": 14,
+                                    "name": "平遥古城",
+                                    "parentName": "晋中",
+                                    "parentId": 126,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 2
+                                },
+                                {
+                                    "id": 125,
+                                    "name": "忻州",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 124,
+                                    "name": "太原",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 123,
+                                    "name": "大同",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 121,
+                                    "name": "临汾",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 15,
+                            "code": 31,
+                            "name": "陕西",
+                            "cityInfos": [
+                                {
+                                    "id": 365,
+                                    "name": "西安",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 8
+                                },
+                                {
+                                    "id": 364,
+                                    "name": "渭南",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 363,
+                                    "name": "汉中",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 26,
+                                    "name": " 钟楼回民街",
+                                    "parentName": "西安",
+                                    "parentId": 365,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 3
+                                },
+                                {
+                                    "id": 357,
+                                    "name": "咸阳",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 14,
+                            "code": 19,
+                            "name": "河南",
+                            "cityInfos": [
+                                {
+                                    "id": 223,
+                                    "name": "三门峡",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 238,
+                                    "name": "郑州",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 236,
+                                    "name": "焦作",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 232,
+                                    "name": "洛阳",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 231,
+                                    "name": "新乡",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 230,
+                                    "name": "开封",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 10,
+                            "code": 18,
+                            "name": "河北",
+                            "cityInfos": [
+                                {
+                                    "id": 35,
+                                    "name": "雄安",
+                                    "parentName": "保定",
+                                    "parentId": 212,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 219,
+                                    "name": "秦皇岛",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 218,
+                                    "name": "石家庄",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 216,
+                                    "name": "承德",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 56,
+                                    "name": "南戴河",
+                                    "parentName": "秦皇岛",
+                                    "parentId": 219,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 53,
+                                    "name": "北戴河",
+                                    "parentName": "秦皇岛",
+                                    "parentId": 219,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 212,
+                                    "name": "保定",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 9,
+                            "code": 21,
+                            "name": "海南",
+                            "cityInfos": [
+                                {
+                                    "id": 270,
+                                    "name": "陵水",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 253,
+                                    "name": "三亚",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 265,
+                                    "name": "海口",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 263,
+                                    "name": "文昌",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 8,
+                            "code": 27,
+                            "name": "西藏",
+                            "cityInfos": [
+                                {
+                                    "id": 61,
+                                    "name": "布达拉宫",
+                                    "parentName": "拉萨",
+                                    "parentId": 327,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 330,
+                                    "name": "林芝",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 327,
+                                    "name": "拉萨",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 4,
+                            "code": 22,
+                            "name": "湖北",
+                            "cityInfos": [
+                                {
+                                    "id": 273,
+                                    "name": "咸宁",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 59,
+                                    "name": "恩施大峡谷",
+                                    "parentName": "恩施自治州",
+                                    "parentId": 277,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 280,
+                                    "name": "神农架",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 277,
+                                    "name": "恩施自治州",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 3,
+                            "code": 25,
+                            "name": "甘肃",
+                            "cityInfos": [
+                                {
+                                    "id": 13,
+                                    "name": "敦煌",
+                                    "parentName": "酒泉",
+                                    "parentId": 314,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 314,
+                                    "name": "酒泉",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 310,
+                                    "name": "张掖",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 2,
+                            "code": 34,
+                            "name": "黑龙江",
+                            "cityInfos": [
+                                {
+                                    "id": 46,
+                                    "name": "哈尔滨",
+                                    "parentName": "哈尔滨",
+                                    "parentId": 380,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 377,
+                                    "name": "伊春",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 0,
+                            "code": -1,
+                            "name": "其他",
+                            "cityInfos": [
+                                {
+                                    "id": 82,
+                                    "name": "天津",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 1,
+                                    "name": "上海",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 368,
+                                    "name": "海东",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 30,
+                                    "name": "北京",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 356,
+                                    "name": "重庆",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 10
+                                },
+                                {
+                                    "id": 83,
+                                    "name": "中卫",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 8,
+                                    "sort": 0
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "foreign": {
+                    "hotDestinations": [
+                        {
+                            "id": 72,
+                            "destination": "大阪",
+                            "type": 2,
+                            "landmark": 0,
+                            "landmarkName": null,
+                            "city": 699,
+                            "cityName": "大阪",
+                            "province": 141,
+                            "provinceName": "大阪府",
+                            "country": 5,
+                            "countryName": "日本",
+                            "timezone": 0,
+                            "timeZone": 9,
+                            "img": "https://static.lvyuetravel.com/lvyue/home/image/201912/ba5e379b-b3f7-418e-9423-56e2183286f8.jpg",
+                            "orderNum": 10
+                        },
+                        {
+                            "id": 75,
+                            "destination": "清迈",
+                            "type": 2,
+                            "landmark": 0,
+                            "landmarkName": null,
+                            "city": 1414,
+                            "cityName": "清迈",
+                            "province": 90,
+                            "provinceName": "清迈府",
+                            "country": 2,
+                            "countryName": "泰国",
+                            "timezone": 0,
+                            "timeZone": 7,
+                            "img": "https://static.lvyuetravel.com/lvyue/home/image/201912/31ea91ce-3a51-4b27-aaba-aaad7008409c.jpg",
+                            "orderNum": 10
+                        },
+                        {
+                            "id": 74,
+                            "destination": " 济州岛",
+                            "type": 2,
+                            "landmark": 0,
+                            "landmarkName": null,
+                            "city": 1562,
+                            "cityName": "济州岛",
+                            "province": 188,
+                            "provinceName": "济州特别自治道",
+                            "country": 6,
+                            "countryName": "韩国",
+                            "timezone": 0,
+                            "timeZone": 9,
+                            "img": "https://static.lvyuetravel.com/lvyue/home/image/201912/d3149d3f-6030-4c33-8197-03c301efec0e.jpg",
+                            "orderNum": 11
+                        },
+                        {
+                            "id": 77,
+                            "destination": "首尔",
+                            "type": 2,
+                            "landmark": 0,
+                            "landmarkName": null,
+                            "city": 1565,
+                            "cityName": "首尔",
+                            "province": 191,
+                            "provinceName": "首尔",
+                            "country": 6,
+                            "countryName": "韩国",
+                            "timezone": 0,
+                            "timeZone": 9,
+                            "img": "https://static.lvyuetravel.com/lvyue/home/image/201912/7b3fc5a8-e5e9-4661-b089-7f23e6637b2f.jpg",
+                            "orderNum": 12
+                        },
+                        {
+                            "id": 73,
+                            "destination": "芭提雅",
+                            "type": 2,
+                            "landmark": 0,
+                            "landmarkName": null,
+                            "city": 1432,
+                            "cityName": "芭提雅",
+                            "province": 108,
+                            "provinceName": "芭提雅",
+                            "country": 2,
+                            "countryName": "泰国",
+                            "timezone": 0,
+                            "timeZone": 7,
+                            "img": "https://static.lvyuetravel.com/lvyue/home/image/201912/75004fd5-b415-4b6a-bfb0-507b967e985a.jpg",
+                            "orderNum": 14
+                        },
+                        {
+                            "id": 84,
+                            "destination": " 京都",
+                            "type": 2,
+                            "landmark": 0,
+                            "landmarkName": null,
+                            "city": 414,
+                            "cityName": "京都",
+                            "province": 131,
+                            "provinceName": "京都府",
+                            "country": 5,
+                            "countryName": "日本",
+                            "timezone": 0,
+                            "timeZone": 9,
+                            "img": "https://static.lvyuetravel.com/lvyue/home/image/201912/ed32f383-3822-441a-8eb2-4af1fc3fbe4a.jpg",
+                            "orderNum": 15
+                        }
+                    ],
+                    "cities": [
+                        {
+                            "minSort": 8,
+                            "code": 5,
+                            "name": "日本",
+                            "cityInfos": [
+                                {
+                                    "id": 414,
+                                    "name": "京都",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 9,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 699,
+                                    "name": "大阪",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 9,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 410,
+                                    "name": "东京",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 9,
+                                    "sort": 0
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 6,
+                            "code": 2,
+                            "name": "泰国",
+                            "cityInfos": [
+                                {
+                                    "id": 1426,
+                                    "name": "素叻他尼府",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 7,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 1432,
+                                    "name": "芭提雅",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 7,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 24,
+                                    "name": "塔佩门",
+                                    "parentName": "清迈",
+                                    "parentId": 1414,
+                                    "areaType": 1,
+                                    "type": 3,
+                                    "timeZone": 7,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 1414,
+                                    "name": "清迈",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 7,
+                                    "sort": 0
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 3,
+                            "code": 6,
+                            "name": "韩国",
+                            "cityInfos": [
+                                {
+                                    "id": 1565,
+                                    "name": "首尔",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 9,
+                                    "sort": 0
+                                },
+                                {
+                                    "id": 1562,
+                                    "name": "济 州岛",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 9,
+                                    "sort": 0
+                                }
+                            ]
+                        },
+                        {
+                            "minSort": 2,
+                            "code": 13,
+                            "name": "印度",
+                            "cityInfos": [
+                                {
+                                    "id": 6756,
+                                    "name": "古尔冈",
+                                    "parentName": null,
+                                    "parentId": 0,
+                                    "areaType": 0,
+                                    "type": 2,
+                                    "timeZone": 5,
+                                    "sort": 0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
