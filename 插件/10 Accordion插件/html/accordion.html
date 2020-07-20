@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>手风琴</title>
+    <link rel="stylesheet" href="../css/accordion.css">
+</head>
+
+<body>
+    <div id="box">
+        <!-- <div class="con">
+            <h1>体育</h1>
+            <ul>
+                <li>体育1</li>
+                <li>体育2</li>
+                <li>体育3</li>
+            </ul>
+        </div> -->
+        <!-- <div class="con">
+            <h1>新闻</h1>
+            <ul>
+                <li>新闻1</li>
+                <li>新闻2</li>
+                <li>新闻3</li>
+            </ul>
+        </div>
+        <div class="con">
+            <h1>娱乐</h1>
+            <ul>
+                <li>娱乐1</li>
+                <li>娱乐2</li>
+                <li>娱乐3</li>
+            </ul>
+        </div> -->
+    </div>
+</body>
+<script src="../js/changeCSS.js"></script>
+<script src="../js/accordionCarousel.js"></script>
+<script>
+
+    accordionCarousel({
+        ele: 'box'
+    });
+
+    /*
+        arrh1: ['学科', '语种', '3', '4', '5'],
+        arrCon: [['英语', '语文', '数学'], ['汉语', '日语', '法语'], '3', '4', '5']
+    
+    */
+
+    // function accordionCarousel(opt) {
+    //     let defaultOpt = {
+    //         ele: 'box',
+    //         arrh1: ['学科', '语种', '肤色'],
+    //         arrCon: [['数学', '物理', '化学'],
+    //         ['汉语', '德语', '法语'], ['白皮肤', '黑皮肤', '黄皮肤']]
+    //     };
+    //     Object.assign(defaultOpt, opt);
+
+    //     let box = document.getElementById(defaultOpt.ele);
+    //     let arrh1 = defaultOpt.arrh1;
+    //     let arrCon = defaultOpt.arrCon;
+    //     // console.log(box, arrCon, arrh1);
+    //     let html = '';
+    //     for (let i = 0; i < arrh1.length; i++) {//0 1 2
+    //         html += `<div class="con">
+    //                     <h1> ${ arrh1[i]}</h1 > 
+    //                     <ul>`;
+    //         //  console.log(arrCon[i].length);
+
+    //         for (let k = 0; k < arrCon[i].length; k++) {
+    //             html += `<li>${arrCon[i][k]}</li>`;
+    //         }
+    //         html += `</ul>
+    //                </div>`;
+    //     }
+
+    //     box.innerHTML = html;
+    //     let acons = box.getElementsByClassName('con');
+    //     // let auls = box.getElementsByTagName('ul');
+    //     // let alis = box.getElementsByTagName('li');
+    //     //console.log(auls, alis);
+
+    //     for (let j = 0; j < acons.length; j++) {
+    //         let isok = false;
+    //         acons[j].onclick = function () {
+    //             if (isok == false) {
+    //                 startMove(acons[j].children[1], { 'height': 120 });
+    //                 isok = true;
+    //             } else {
+    //                 startMove(acons[j].children[1], { 'height': 0 });
+    //                 isok = false;
+    //             }
+
+    //         }
+    //     }
+
+    // }
+
+
+
+
+
+</script>
+
+</html>

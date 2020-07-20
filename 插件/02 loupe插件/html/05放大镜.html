@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>05放大镜</title>
+    <link rel="stylesheet" href="../css/loupe.css">
+    <!-- <link rel="stylesheet" href="../css/2222.css"> -->
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box" id="box">
+        <!-- 右部 大图 -->
+        <div class="bigTu">
+            <!-- <img  src="" alt=""> -->
+        </div>
+        <!-- 左部  小图 -->
+        <div class="minTu">
+            <!-- 被放大的图片 -->
+            <div class="main">
+                <!-- 遮罩 -->
+                <!-- <img src="../img/banner1.jpg" alt="" >
+                <div class="mask" id="mask"></div> -->
+            </div>
+
+            <!-- 切换图片 -->
+            <div class="bottom">
+                <p class="prev">&lt;</p>
+                <div class="box2">
+                    <!-- 切换的小图 -->
+                    <ul class="smaller">
+                        <!-- <li><img src="../images/banner5.jpg" alt=""></li> -->
+                    </ul>
+                </div>
+                <p class="next">&gt;</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../js/loupe.js"></script>
+<script>
+    loupeCarousel({
+        ele: 'box'
+    });
+</script>
+
+</html>

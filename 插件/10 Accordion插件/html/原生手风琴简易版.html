@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>手风琴</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        #box {
+            margin: 50px;
+        }
+
+        #box h1 {
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: lightblue;
+            cursor: pointer;
+            font-size: 24px;
+            font-weight: lighter;
+            border: 1px solid #000;
+        }
+
+        #box .con {
+            width: 120px;
+            height: auto;
+        }
+
+        #box ul {
+            height: 0;
+            overflow: hidden;
+        }
+
+        #box ul li {
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: lightcyan;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="box">
+        <div class="con">
+            <h1>体育</h1>
+            <ul>
+                <li>体育1</li>
+                <li>体育2</li>
+                <li>体育3</li>
+            </ul>
+        </div>
+        <div class="con">
+            <h1>新闻</h1>
+            <ul>
+                <li>新闻1</li>
+                <li>新闻2</li>
+                <li>新闻3</li>
+            </ul>
+        </div>
+        <div class="con">
+            <h1>娱乐</h1>
+            <ul>
+                <li>娱乐1</li>
+                <li>娱乐2</li>
+                <li>娱乐3</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="../js/changeCSS.js"></script>
+<script>
+    var box = document.querySelector('#box');
+    var cons = document.querySelectorAll('#box .con');
+    // var isok = true;
+    for (var i = 0; i < cons.length; i++) {
+        //效果一 通过开关，设置点击显示，点击隐藏
+        let isok = false;
+        cons[i].onclick = function () {
+            if (isok == false) {
+                startMove(this.children[1], { 'height': 120 });
+                isok = true;
+            } else {
+                startMove(this.children[1], { 'height': 0 });
+                isok = false;
+            }
+        }
+
+
+        //效果二 移入显示，移出隐藏
+        // cons[i].onmouseover = function () {
+        //     startMove(this.children[1], { 'height': 120 });
+        //     // console.log(this.children[1]);
+        //     var ali = this.children[1].children;
+        // }
+        // cons[i].onmouseout = function () {
+        //     startMove(this.children[1], { 'height': 0 });
+        //     //console.log(this.children[1].children.length * this.children[1].children[0].offsetHeight);
+        // }
+    }
+</script>
+
+</html>

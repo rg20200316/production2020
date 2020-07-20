@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>下拉菜单</title>
+    <style>
+        ul,
+        li {
+            list-style: none;
+        }
+
+        #downMenu {
+            width: 100px;
+            height: auto;
+            background: pink;
+
+        }
+
+        #downMenu span {
+            display: block;
+            height: 20px;
+            text-align: center;
+            background: rgb(109, 191, 230);
+            cursor: pointer;
+        }
+
+        #downMenu #list {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="downMenu">
+        <span>下拉菜单</span>
+        <ul id="list">
+            <li>1111</li>
+            <li>1111</li>
+            <li>1111</li>
+            <li>1111</li>
+        </ul>
+    </div>
+</body>
+<script src="../js/downMenuCarousel.js"></script>
+<script>
+
+    downMenuCarousel({
+        ele: 'downMenu'
+    });
+</script>
+
+</html>

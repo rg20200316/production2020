@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选项卡</title>
+    <link rel="stylesheet" href="../css/tabWidget.css">
+</head>
+
+<body>
+    <div id="tabWidget">
+        <div id="tabWidget-top">
+            <ul>
+                <!-- <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li> -->
+            </ul>
+        </div>
+        <div id="tabWidget-bottom">
+            <ul>
+                <li>010</li>
+                <li>020</li>
+                <li>030</li>
+                <li>040</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="../js/changeCSS.js"></script>
+<script src="../js/tabWidgetCarousel.js"></script>
+<script>
+    //配置参数
+    tabWidgetCarousel({
+        ele: 'tabWidget-top',
+        minId: 'tabWidget-bottom',
+        ulName: 'ul',
+        arr1: ['新闻', '娱乐', '科技', '生活'],//可添加或减少
+        arr2: ['这是新闻模块', '请欣赏娱乐模块', '接触科技', '体验生活']
+    });
+
+</script>
+
+</html>

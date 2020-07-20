@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+#box {
+    margin: 50px;
+}
+
+#box h1 {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: lightblue;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: lighter;
+    border: 1px solid #000;
+}
+
+#box .con {
+    width: 120px;
+    height: auto;
+}
+
+#box ul {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.01s;
+}
+
+#box ul li {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: lightcyan;
+}
+
+#box ul li:hover {
+    background: orange;
+    cursor: pointer;
+}

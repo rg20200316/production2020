@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: red;
+        }
+
+        #box {
+            width: 1000px;
+            height: 300px;
+            margin: 50px auto;
+            padding-left: 100px;
+        }
+
+        .name {
+            float: left;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background: yellowgreen;
+            margin: 10px;
+        }
+
+        #btn {
+            width: 100px;
+            height: 30px;
+            margin-left: 540px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>点名小程序</h1>
+    <div id="box"></div>
+    <input type="button" id="btn" value="点名">
+
+    <script>
+        window.onload = () => {//
+            var arr = ["张俊", "谭锐明", "易玉清", "武红艳", "梁智钊", "吴艺苑", "钟倩", "陈俊兰", "龙利成", "何如锐", "何琪", "邓柏达", "卢显波",
+                "覃淇韩", "蔡莹", "陈秋丽", "陈嘉威", "李硕", "刘健", "徐沛权", "张政坤", "谢加财", "崔宇灏", "刘文彬", "李平", "宋权库", "罗振洲",
+                "郑怡", "石岚清", "张宗明", "金鹏", "宁其亮", "黄思敏", "陈金明", "戴德钢", "邓文艳", "黄耿武", "刘强", "黎倩", "李倩", "李朗庆",
+                "卢涛", "龚志清", "龙利成"
+            ];
+            //获取页面中的节点
+            var oBox = document.getElementById("box");
+            for (var i = 0; i < arr.length; i++) {
+                //创建div节点
+                var oDiv = document.createElement("div");
+                oDiv.innerHTML = arr[i];//渲染
+                oDiv.className = "name";//赋值
+                oBox.appendChild(oDiv);//插入到Box中
+            }
+            //拿到点名按钮
+            var oBtn = document.getElementById("btn");
+            //添加点击事件
+            oBtn.onclick = function () {
+                var index = 0;
+                //定时
+                timer = setInterval(function () {
+                    //清除背景颜色
+                    for (var j = 0; j < arr.length; j++) {
+                        oBox.children[j].style.background = '';//children获取oBox的子元素集合
+                    }
+                    //留下当前的背景颜色
+                    var ranDom = parseInt(Math.random() * arr.length);//随机抽点
+                    oBox.children[ranDom].style.background = 'red';
+                    //记录定时器
+                    index++;
+                    //判断定时器停
+                    if (index == 20) {
+                        clearInterval(timer);
+                    };
+
+                }, 100)//100毫秒
+            }
+        };
+    </script>
+</body>
+
+</html>

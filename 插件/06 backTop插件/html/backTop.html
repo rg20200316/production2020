@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>返回顶部</title>
+    <style>
+        #backTop {
+            width: 20px;
+            height: 40px;
+            background: pink;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="backTop">
+        ↑
+    </div>
+    <p id="p">1</p>
+</body>
+<script src="../js/changeCSS.js"></script>
+<script src="../js/backTopCarousel.js"></script>
+<script>
+    backTopCarousel({
+        ele: 'backTop'
+    });
+</script>
+
+</html>

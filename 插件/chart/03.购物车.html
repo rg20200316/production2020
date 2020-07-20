@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="stoppingCar.css">
+</head>
+
+<body>
+    <div id="box">
+        <div class="top">
+            <ul class="top-con">
+                <li style="margin-left: 20px;">
+                    <label><input type="checkbox" id="check-all-top" /><span id="checkAll"
+                            style="margin-left: 10px;">全选</span></label>
+                </li>
+                <li style="margin-left: 250px;">商品信息</li>
+                <li style="margin-left: 250px;">商品参数</li>
+                <li style="margin-left: 100px">单价</li>
+                <li style="margin-left: 80px">数量</li>
+                <li style="margin-left: 80px">金额</li>
+                <li style="margin-left: 80px">操作</li>
+            </ul>
+        </div>
+        <div class="content">
+            <ul class="content-con">
+                <!-- <li class="lista">
+                    <label><input type="checkbox" class="goods-list-item" style="margin-left: 50px;
+                    margin-top:50px;"></label>
+                    <div class="goods-image-column">
+                        <img class="goods-image" src="../images/shopTroll/1.jpg" style="width: 100px; height: 100px;">
+                        <span id="goods-info" class="jiesao">看了看大家发快递了很费劲的开始放假</span>
+                    </div>
+                    <div class="tit">
+                        <span class="title">四季度后付款的酸辣粉</span>
+                    </div>
+                    <div class="goods-price" style="color:red;">
+                        <span>￥</span>
+                        <span class="single-price">199</span>
+                    </div>
+                    <div class="goods-counts">
+                        <div class="input-group">
+                            <div class="input-btn" style="margin-left: 30px;">
+                                <button type="button" class="car-decrease" style="margin-left: 20px;">-</button>
+                            </div>
+                            <div><input style="width:50px;height:20px;line-height:20px;display:block;margin-left:10px;"
+                                    data-kucun="10" class="goods-count" type="text" value="1"></div>
+                            <div class="input-btn">
+                                <button type="button" class="car-add">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods-money-count" style="color:red;">
+                        <span>￥</span>
+                        <span class="single-total">199</span>
+                    </div>
+                    <div class="goods-operate">
+                        <button type="button" class="item-delete">删除</button>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <div class="bottom">
+            <ul class="bottom-con">
+                <li style="margin-left: 20px;">
+                    <label><input type="checkbox" id="check-all-bottom" /><span id="checkAll"
+                            style="margin-left: 10px;">全选</span></label>
+                </li>
+                <li style="margin-left: 38px;">
+                    <span id="deleteMulty" style="color: red;">删除</span>
+                </li>
+                <li>
+                </li>
+                <li style="margin-left: 660px;width: 125px">
+                    <span>已选商品 <span id="seCount" style="color: red">0</span> 件</span>
+                </li>
+                <li style="margin-left: 40px;width: 150px">
+                    <span>合计：<span id="seMoney" style="color: red;">￥0.00</span></span>
+                </li>
+                <li style="margin-left: 50px;width: 100px;height: 100%;background-color: #959595;text-align: center;">
+                    <span style="display: block;" id="jiesuan">结算</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="shopTroll.js"></script>
+<script>
+    shopTroll({
+        //配置参数
+        imgList: ['t1.jpg', 't2.jpg', 't3.jpg'],//商品图片
+        //商品信息
+        introduce: ['优惠20元顺丰包邮 免息 送电源+蓝牙 NFC Huawei 人脸识别NFC刷卡', '顺丰速发【新品】Huawei/华为畅享9珍珠屏华为官网官方旗舰店nova4i青春版', '全网通4G手机降价分期购送礼高配 华为官网官方旗舰店正品行货'],
+        title: ['Mate 9 全网通4G手机Pro', 'MAXplus/mate20pro手机', 'Huawei/华为 Mate9手机'],//商品名字
+        goodsPrice: ['1499', '1099', '2099'],//价格
+        singleTotal: ['1499', '1099', '2099'],//总价格
+        kucun: ['10', '20', '15']//库存
+    })
+</script>
+
+</html>

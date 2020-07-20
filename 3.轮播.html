@@ -1,0 +1,192 @@
+'<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            position:relative;
+            width: 800px;
+            height: 400px;
+            margin:50px auto;
+        }
+        #list{
+            font-size:50px;
+            color:#fff;
+            text-align: center;
+            line-height: 400px;
+        }
+        #list li{
+            position:absolute;
+            list-style: none;
+            width: 800px;
+            height: 400px;
+            float: left;
+            opacity: 0;
+            transition: all .5s;
+        }
+        #list li:nth-child(1) {
+            background: pink;
+        }
+        #list li:nth-child(2) {
+            background: green;
+        }
+        #list li:nth-child(3) {
+            background: darkred;
+        }
+        #list li:nth-child(4) {
+            background: plum;
+        }
+        #list li:nth-child(5) {
+            background: yellowgreen;
+        }
+        input{
+            width: 50px;
+            height: 100px;
+            font-size:50px;
+            color:#999;
+            position: absolute;
+            top:50%;
+            margin-top:-50px;
+            z-index: 100;
+            border:none;
+            outline:none;
+        }
+        #pre{
+            left:0;
+        }
+        #next{
+            right:0;    
+        }
+        #pointList{
+            position:absolute;
+            right: 20px;
+            bottom:20px;
+            z-index: 100;
+        }
+        #pointList li{
+            width: 10px;
+            height: 10px;
+            background:rgb(0,0,0,.5);
+            border-radius: 50%;
+            margin-right:15px;
+            list-style: none;
+            float: left;
+            cursor: pointer;
+        }
+        #list .active{
+            z-index: 10;
+            opacity: 1;
+        }
+        #pointList .pointActive{
+            background:rgba(255,255,255,.5);
+        }
+    </style>
+    <script>
+       window.onload = function() {
+            var list = document.getElementById('list');
+            var items = list.getElementsByTagName('li');
+
+            var pointList =  document.getElementById('pointList');
+            var points = pointList.getElementsByTagName('li');
+
+            var preBtn = document.getElementById('pre');
+            var nextBtn = document.getElementById('next');
+
+
+            var index = 0;
+
+            function clearActive() {
+                for(var i = 0;i <items.length;i++){
+                    items[i].className = '';
+                }
+                for(var i = 0;i < points.length;i++){
+                    points[i].className = '';
+                }
+                
+            }
+
+            function goIndex() {
+                clearActive()
+                items[index].className = 'active';
+                points[index].className = 'pointActive';
+            }
+
+
+            function goNext(){
+                if(index < 4){
+                    index++;
+                }else{
+                    index = 0;
+                }
+                goIndex();
+            }
+
+            function goPre() {
+                if(index == 0){
+                    index = 4;
+                }else{
+                    index--;
+                }
+                goIndex();
+            }
+
+            preBtn.onclick =function() {
+                goPre();
+            }
+
+            nextBtn.onclick =function() {
+                goNext();
+            }
+
+            for(var i = 0 ;i < points.length;i++) {
+                points[i].onclick = function(){
+                    var pointIndex = this.getAttribute('data-index');
+                    // console.log(pointIndex);
+                    index = pointIndex;
+                    goIndex();
+                }
+            }
+            var timer = setInterval(goNext, 1000)
+            
+            list.onmouseover = function(ev) {
+                if(ev.target.tagName.toLowerCase() == 'li') {
+                    clearInterval(timer);
+                }
+            }
+
+            list.onmouseout = function(ev) {
+                if(ev.target.tagName.toLowerCase() == 'li') {
+                    timer = setInterval(goNext, 1000);
+                }
+            }
+
+
+       }
+    </script>
+</head>
+<body>
+    <div id="box">
+        <ul id="list">
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+        <ul id="pointList">
+            <li class="pointActive" data-index = '0'></li>
+            <li data-index='1'></li>
+            <li data-index='2'></li>
+            <li data-index='3'></li>
+            <li data-index='4'></li>
+        </ul>
+        <input id="pre" type="button" value="&lt">
+        <input id="next" type="button" value="&gt">
+    </div>
+</body>
+</html>'

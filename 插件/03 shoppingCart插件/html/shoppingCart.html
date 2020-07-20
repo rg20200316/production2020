@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>单店铺购物车</title>
+    <link rel="stylesheet" href="../css/shoppingCart.css">
+</head>
+
+<body>
+    <div id="box">
+        <!-- 信息导航栏 -->
+        <div class="top">
+            <ul class="top-con">
+                <li style="margin-left: 20px;">
+                    <label>
+                        <input type="checkbox" id="check-all-top" />
+                        <span id="checkAll" style="margin-left: 10px;">全选</span>
+                    </label>
+                </li>
+                <li style="margin-left: 250px;">商品信息</li>
+                <li style="margin-left: 250px;">商品参数</li>
+                <li style="margin-left: 100px">单价</li>
+                <li style="margin-left: 80px">数量</li>
+                <li style="margin-left: 80px">金额</li>
+                <li style="margin-left: 80px">操作</li>
+            </ul>
+        </div>
+        <!-- 商品属性 -->
+        <div class="content">
+            <ul class="content-con">
+                <!-- <li class="lista">
+                    /* 单店铺全选 */
+                    <label>
+                        <input type="checkbox" class="goods-list-item" style="margin-left: 50px;
+                    margin-top:50px;">
+                    </label>
+                   /*商品信息 */
+                    <div class="goods-image-column">
+                        <img class="goods-image" src="../img/t1.jpg" style="width: 100px; height: 100px;">
+                        <span id="goods-info" class="jiesao">看了看大家发快递了很费劲的开始放假</span>
+                    </div>
+                   /*参数 */
+                    <div class="tit">
+                        <span class="title">四季度后付款的酸辣粉</span>
+                    </div>
+                    /* 单价 */
+                    <div class="goods-price" style="color:red;">
+                        <span>￥</span>
+                        <span class="single-price">199</span>
+                    </div>
+                   /* 数量 */
+                    <div class="goods-counts">
+                        <div class="input-group">
+                            <div class="input-btn" style="margin-left: 30px;">
+                                <button type="button" class="car-decrease" style="margin-left: 20px;">-</button>
+                            </div>
+                            <div>
+                                <input style="width:50px;height:20px;line-height:20px;display:block;margin-left:10px;"
+                                    data-kucun="10" class="goods-count" type="text" value="1">
+                            </div>
+                            <div class="input-btn">
+                                <button type="button" class="car-add">+</button>
+                            </div>
+                        </div>
+                    </div>
+                   /* 金额小计 */
+                    <div class="goods-money-count" style="color:red;">
+                        <span>￥</span>
+                        <span class="single-total">199</span>
+                    </div>
+                    /* 删除 */
+                    <div class="goods-operate">
+                        <button type="button" class="item-delete">删除</button>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <!-- 结算信息显示栏 -->
+        <div class="bottom">
+            <ul class="bottom-con">
+                <li style="margin-left: 20px;">
+                    <!-- 所有店铺全选 -->
+                    <label><input type="checkbox" id="check-all-bottom" /><span id="checkAll"
+                            style="margin-left: 10px;">全选</span></label>
+                </li>
+                <li style="margin-left: 38px;">
+                    <!-- 商品全部删除 -->
+                    <span id="deleteMulty" style="color: red;">删除</span>
+                </li>
+                <li>
+                </li>
+                <li style="margin-left: 660px;width: 125px">
+                    <span>已选商品 <span id="seCount" style="color: red">0</span> 件</span>
+                </li>
+                <li style="margin-left: 40px;width: 150px">
+                    <span>合计：￥<span id="seMoney" style="color: red;">0.00</span></span>
+                </li>
+                <li style="margin-left: 50px;width: 100px;height: 100%;background-color: #959595;text-align: center;">
+                    <span style="display: block;" id="jiesuan">结算</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    let box = document.querySelector('#box');
+    let content = document.querySelector('.content');
+    let contentCon = document.querySelector('.content-con');//渲染的ul
+    //console.log(contentCon);
+    let arr = [
+        {
+            imgList: '../img/t1.jpg',//图片
+            introduce: '优惠20元顺丰包邮 免息 送电源+蓝牙 NFC Huawei 人脸识别NFC刷卡',//参数
+            title: 'Mate 4 全网通4G手机Proplus',//标题
+            goodsPrice: '239',//单价
+            singleTotal: '239',//小计
+            kucun: '14'//库存
+        },
+        {
+            imgList: '../img/t2.jpg',
+            introduce: '优惠20元顺丰包邮 免息 送电源+蓝牙 NFC Huawei 人脸识别NFC刷卡',
+            title: 'Mate 4 全网通4G手机Proplus',
+            goodsPrice: '499',
+            singleTotal: '499',
+            kucun: '10'
+        },
+        {
+            imgList: '../img/t3.jpg',
+            introduce: '优惠20元顺丰包邮 免息 送电源+蓝牙 NFC Huawei 人脸识别NFC刷卡',
+            title: 'Mate 4 全网通4G手机Proplus',
+            goodsPrice: '457',
+            singleTotal: '457',
+            kucun: '34'
+        }
+    ];
+    let html = arr.map(function (item, index) {
+        // console.log(index);
+        return `<li class="list${index + 1}">
+                    <label>
+                        <input type="checkbox" class="goods-list-item" style="margin-left: 50px;
+                    margin-top:50px;">
+                    </label>
+                    <div class="goods-image-column">
+                        <img class="goods-image" src="${item.imgList}" style="width: 100px; height: 100px;">
+                        <span id="goods-info" class="jiesao">${item.introduce}</span>
+                    </div>
+                    <div class="tit">
+                        <span class="title">${item.title}</span>
+                    </div>
+                    <div class="goods-price" style="color:red;">
+                        <span>￥</span>
+                        <span class="single-price">${item.goodsPrice}</span>
+                    </div>
+                    <div class="goods-counts">
+                        <div class="input-group">
+                            <div class="input-btn" style="margin-left: 30px;">
+                                <button type="button" class="car-decrease" style="margin-left: 20px;">-</button>
+                            </div>
+                            <div>
+                                <input style="width:50px;height:20px;line-height:20px;display:block;margin-left:10px;"
+                                    data-kucun=${item.kucun} class="goods-count" type="text" value="1">
+                            </div>
+                            <div class="input-btn">
+                                <button type="button" class="car-add">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods-money-count" style="color:red;">
+                        <span>￥</span>
+                        <span class="single-total">${item.singleTotal}</span>
+                    </div>
+                    <div class="goods-operate">
+                        <button type="button" class="item-delete">删除</button>
+                    </div>
+                </li>`;
+
+    }).join('');
+    contentCon.innerHTML = html;
+
+    let goodList = document.querySelectorAll('.goods-list-item');//单选
+    //console.log(goodList);
+    let singleTotal = document.querySelectorAll('.single-total');//小计
+    let singlePrice = document.querySelectorAll('.single-price');//单价
+    let cartCut = document.querySelectorAll('.car-decrease');//减    
+    let cartAdd = document.querySelectorAll('.car-add');//加
+    let cartCount = document.querySelectorAll('.goods-count'); //库存
+    let tnum = document.querySelectorAll('.goods-count');//内容框的数
+    let cartDel = document.querySelectorAll('.item-delete');//删除单行
+    let dataList = document.querySelectorAll('.content-con li');// li 的个数
+
+    let checkAll = document.querySelector('#check-all-bottom');//全选
+    let deleteMulty = document.querySelector('#deleteMulty');//全删
+    let seMoney = document.querySelector('#seMoney');//总价
+    let jiesuan = document.querySelector('#jiesuan');//结算
+
+    //全选和反选
+    //全选
+    checkAll.onclick = function () {
+        for (let i = 0; i < goodList.length; i++) {
+            goodList[i].checked = checkAll.checked;
+        }
+        seMoneyTatol();
+    }
+
+    //反选
+    for (let i = 0; i < dataList.length; i++) {
+        goodList[i].onclick = function () {
+            // isCheck();
+            if (goodList[i].checked) {
+                jiesuan.className = 'active';
+            }
+            seMoneyTatol();
+        }
+    }
+
+    //封装全选
+    function isCheck() {
+        let goodList = document.querySelectorAll('.goods-list-item');//单选
+        let num = 0;//计数器
+        let arr = [];//单选框被选中的个数
+        for (let i = 0; i < goodList.length; i++) {
+            if (goodList[i].checked) {
+                num++;
+                arr.push(i);
+            }
+        }
+        //判断单选框是否已经被全部选中
+        if (num == goodList.length && num != 0) {
+            checkAll.checked = true;
+        } else {
+            checkAll.checked = false;
+        }
+        return arr;
+    }
+
+    //加减算法
+    for (let i = 0; i < tnum.length; i++) {
+        //文本输入大小限制
+        let val = tnum[i].value * 1;//当前数量
+        tnum[i].onblur = () => {
+            val = tnum[i].value * 1;
+            bner(i, val);
+            seMoneyTatol();
+        }
+        //加
+        cartAdd[i].onclick = function () {
+            val++;
+            bner(i, val);
+            seMoneyTatol();
+        }
+        //减
+        cartCut[i].onclick = function () {
+            val--;
+            bner(i, val);
+            seMoneyTatol();
+        }
+        //删除当行
+        cartDel[i].onclick = () => {
+            var res = confirm('确定删除？');
+            if (res) {
+                contentCon.removeChild(dataList[i]);
+            }
+            seMoneyTatol();
+        }
+    }
+
+    //封装加减
+    function bner(now, val) {//now 索引
+        let kucun = cartCount[now].dataset.kucun;
+        if (val > kucun) {
+            val = kucun;
+        } else if (val < 1) {
+            val = 1;
+        }
+        tnum[now].value = val;
+        singleTotal[now].innerHTML = val * singlePrice[now].innerHTML;
+        seMoneyTatol();
+    }
+
+    //全部删除
+    deleteMulty.onclick = function () {
+        var res = confirm('确定删除？');
+        if (res) {
+            content.removeChild(contentCon);
+        }
+        seMoneyTatol();
+    }
+
+    function seMoneyTatol() {
+        let arr = isCheck();
+        let sum = 0;
+        let priceSum = 0;
+        arr.forEach(function (item) {
+            sum += cartCount[item].value * 1;
+            priceSum += (cartCount[item].value * 1) * (singlePrice[item].innerHTML * 1);
+
+        });
+        //总价
+        seMoney.innerHTML = priceSum.toFixed(2);
+        //总数量
+        seCount.innerHTML = sum;
+        if (arr.length) {
+            jiesuan.className = 'active';
+        } else {
+            jiesuan.className = '';
+        }
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>右侧边栏广告</title>
+    <link rel="stylesheet" href="../css/sideAdvertising.css">
+
+</head>
+
+<body>
+    <div id="sideRight">
+        <div id="sideRightLeft"></div>
+    </div>
+</body>
+<script src="../js/changeCSS.js"></script>
+<script src="../js/asideCarousel.js"></script>
+<script>
+
+    asideCarousel({//配置参数
+        ele: 'sideRight',//设置id名
+        right: -200,//向左移出距离
+        left: 0//向右移出距离
+    });
+
+    //原生写法
+    //var sideRight = document.getElementById('sideRight');//右侧边栏主体
+    // console.log(sideRight);
+    // sideRight.onmouseover = function () {
+    //     startMove(sideRight, { 'right': 0 });
+    // }
+    // sideRight.onmouseout = function () {
+    //     startMove(sideRight, { 'right': -200 });
+    // }
+
+
+
+</script>
+
+</html>

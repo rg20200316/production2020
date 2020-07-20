@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="widspan=device-widspan, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>手风琴插件</title>
+
+    <link rel="stylesheet" href="../css/fuza.css">
+</head>
+
+<body>
+    <div id="accordion">
+        <ul>
+            <span>点击1</span>
+            <li>111</li>
+            <li>111</li>
+            <li>111</li>
+        </ul>
+        <ul>
+            <span>点击2</span>
+            <li>222</li>
+            <li>222</li>
+            <li>222</li>
+        </ul>
+        <ul>
+            <span>点击3</span>
+            <li>333</li>
+            <li>333</li>
+            <li>333</li>
+        </ul>
+    </div>
+</body>
+<script>
+
+    (function () {
+        let accordion = document.getElementById('accordion');
+        let list = accordion.getElementsByTagName('ul');
+        // let arrSp = ['点击1', '点击2', '点击3', '点击4'];
+        // let arrLi = ['内容1', '内容2', '内容3', '内容4'];
+
+        // accordion.innerHTML = html;
+        //遍历
+        for (let i = 0; i < list.length; i++) {
+            //开关
+            let isok = false;
+            //点击
+            list[i].onclick = function (ev) {
+                if (isok == false) {
+                    for (let j = 1; j < list.length + 1; j++) {
+                        list[i].children[j].style.display = 'block';
+                    }
+                    isok = true;
+
+                } else {
+                    for (let j = 1; j < list.length + 1; j++) {
+                        list[i].children[j].style.display = 'none';
+                    }
+                    isok = false;
+                }
+            }
+
+        }
+
+    })();
+
+
+</script>
+
+</html>
